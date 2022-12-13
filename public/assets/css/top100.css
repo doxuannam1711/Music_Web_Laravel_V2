@@ -1,0 +1,157 @@
+:root {
+  --scale-when-hover: 1;
+  --change-opacity: 1;
+  --change-display: none;
+}
+
+.top_music {
+}
+/* Start banner image */
+.banner {
+  width: calc(100% + 35px);
+  height: 280px;
+  margin: -70px -35px 0;
+  position: relative;
+  background: url(../img/top100/banner_top100.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-blur,
+.bg-alpha,
+.bg-alpha-1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% + 35px);
+  margin: -70px -35px 0;
+  height: 350px;
+  position: absolute;
+}
+.bg-blur {
+}
+.bg-alpha {
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0) 37%,
+    var(--layout-bg)
+  );
+}
+.bg-alpha-1 {
+  opacity: 0.8;
+  background-image: linear-gradient(
+    180deg,
+    var(--background),
+    var(--background)
+  );
+}
+.top100_logo {
+  position: relative;
+  background: url(../img/top100/top100_logo.png);
+  height: 236px;
+  width: 607px;
+  top: 0;
+  bottom: 0;
+}
+/* End banner image */
+
+/* Start playlist section */
+.card-section {
+  margin-top: 50px;
+  width: calc(100% - 35px);
+  /* height: 300px; */
+  /* background-color: aqua; */
+}
+
+.card-container {
+  margin-bottom: 60px;
+}
+.title {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item {
+  width: calc(100% / 5);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card-info,
+.card-image {
+  width: 213.5px;
+  overflow: hidden;
+}
+.card-image {
+  position: relative;
+  border-radius: 10px;
+}
+.display-block {
+  display: block !important;
+}
+
+/* ------------------------------------------------------- */
+.show-effect {
+  display: var(--change-display);
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-effect > i {
+  font-size: 33px;
+  color: #fff;
+}
+.card-image:hover {
+  --change-opacity: 0.7;
+  --scale-when-hover: 1.1;
+  --change-display: flex;
+}
+.card-image > img {
+  transition: 0.3s ease-out;
+  transform: scale(var(--scale-when-hover));
+  opacity: var(--change-opacity);
+}
+/* -------------------------------------------------------- */
+
+.card-name {
+  color: var(--text-white);
+  padding: 7px 0;
+}
+.card-name > a {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 700;
+  margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  color: var(--text-white);
+}
+
+.card-artists {
+  color: var(--text-white);
+}
+.card-artists > a {
+  color: var(--text-white);
+  font-size: 14px;
+}
+.card-name > a:hover,
+.card-artists > a:hover {
+  color: var(--link-text-hover);
+}
+
+/* End playlist section */

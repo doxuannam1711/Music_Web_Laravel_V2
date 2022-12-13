@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/font/font/css/all.css">
+   <link rel="stylesheet" href="./assets/css/khampha.css">
+   <link rel="stylesheet" href="./assets/css/music_play.css">
+
+   <title>App nghe nhạc</title>
+</head>
+
+<body>
+   <!-- Grid 1: chứa menu sidebar bên trái -->
+   <div class="grid-1">
+      <div class="sidebar">
+         <div class="logo-brand pl-35">
+            <img src="assets/img/assets-khampha/logo.png" width="100" height="100%" alt="logo brand">
+         </div>
+         <!-- menu 1 -->
+         <div class="nav-menu-1">
+            <a class="ca-nhan" href="#" onclick="">
+               <div class="nav-icon"><i class="fa-solid fa-person"></i></div>
+               <span>Cá nhân</span>
+            </a>
+            <a class="kham-pha" href="#">
+               <div class="nav-icon"><i class="fa-solid fa-music"></i></div>
+               <span>Khám phá</span>
+            </a>
+            <a class="chart" href="#">
+               <div class="nav-icon"><i class="fa-solid fa-chart-simple"></i></div>
+               <span>#Chart</span>
+            </a>
+            <a class="theo-doi" href="#">
+               <div class="nav-icon"><i class="fa-sharp fa-solid fa-lines-leaning"></i></div>
+               <span>Theo dõi</span>
+            </a>
+
+         </div>
+         <div class="divider"></div>
+         <!-- menu 2 -->
+         <div class="nav-menu-2">
+            <a class="nhac-moi" href="#">
+               <div class="nav-icon"><i class="fa-solid fa-record-vinyl"></i></div>
+               <span>Nhạc mới</span>
+            </a>
+            <a class="the-loai" href="#">
+               <div class="nav-icon"><i class="fa-solid fa-radio"></i></div>
+               <span>Thể loại</span>
+            </a>
+            <a class="top-100" href="#">
+               <div class="nav-icon"><i class="fa-solid fa-award"></i></div>
+               <span>Top 100</span>
+            </a>
+         </div>
+      </div>
+   </div>
+   <div class="grid-2">
+
+      <!-- header -->
+      <div class="header-top">
+         <div class="search-bar">
+            <input type="text" alt="Tìm kiếm" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </input>
+         </div>
+         <div class="user-function">
+            <a href="#" class="button1 func"><i class="fa-solid fa-seedling"></i></a>
+
+            <div class="header__nav-btn func">
+               <input type="file" name="upload song" id="header__nav-input">
+               <label for="header__nav-input">
+                  <i class="fa-solid fa-upload"></i>
+               </label>
+            </div>
+            </li>
+
+            <a href="#" class="button3 func"><i class="fa-solid fa-gear"></i></a>
+            <a href="#" class="button5 user">
+               <i class="fa-solid fa-user"></i>
+               <span>Nhóm PT Web</span>
+            </a>
+         </div>
+      </div>
+
+      <!-- Code giao diện của ae ở đây -->
+      <!-- <div class="">
+
+      </div> -->
+
+   </div>
+  
+   <!-- Thanh phát nhạc ở dưới -->
+   <div class="app-player">
+      <div class="player-left">
+         <div class="player-left-top">
+            <div class="cd">
+               <div class="cd-thumb">
+
+               </div>
+            </div>
+            <footer>
+               <!-- <h4>Now playing:</h4> -->
+               <h2 class="song-name">String 57th & 9th</h2>
+               <h2 class="singer">String 57th & 9th</h2>
+            </footer>
+            <!-- <img src="{{ url('/img/music-avatar.jpg') }}" alt="" class="album-art"> -->
+         </div>
+
+         <div class="player-left-bottom">
+            <div class="time-container">
+               <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+               <audio id="audio" src=""></audio>
+               <div class="timer">
+                  <div class="current-time">01:00</div>
+                  <div class="duration-time">03:20</div>
+
+               </div>
+            </div>
+
+            <div class="control-container">
+               <div class="btn btn-repeat">
+                  <i class="fas fa-redo"></i>
+               </div>
+               <div class="btn btn-prev">
+                  <i class="fas fa-step-backward"></i>
+               </div>
+               <div class="btn btn-toggle-play">
+                  <i class="fas fa-pause icon-pause"></i>
+                  <i class="fas fa-play icon-play"></i>
+               </div>
+               <div class="btn btn-next">
+                  <i class="fas fa-step-forward"></i>
+               </div>
+               <div class="btn btn-random">
+                  <i class="fas fa-random"></i>
+               </div>
+            </div>
+           
+         </div>
+         <div class="right-side" style="height: 100%; width:100%"></div>
+      </div>
+   </div>
+
+   <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
