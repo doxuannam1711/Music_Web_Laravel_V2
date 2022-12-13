@@ -49,7 +49,9 @@ a {
 }
 
 /* style header */
-
+.sidebar{
+   margin-bottom: 40px;
+}
 .sidebar .logo-brand {
   padding-top: 15px;
   margin-bottom: 20px;

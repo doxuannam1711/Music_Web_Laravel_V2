@@ -16,6 +16,8 @@
 
    <link rel="stylesheet" href="{{url('/assets/css/top100.css')}}">
 
+   <link rel="stylesheet" href="{{url('/assets/css/login_form.css')}}">
+
    <link rel="stylesheet" href="{{url('/assets/css/base.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/zingchart.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/normalize.min.css')}}">
@@ -23,7 +25,81 @@
    <title>Music Player Laravel</title>
 </head>
 
-<body>
+<body style="user-select: none;">
+   
+   <!-- Begin: Open login form -->
+   <div class="form-login js-login">
+      <div class="login-container js-login-container">
+         <div class="login-close-btn js-login-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+         </div>
+
+         <header class="login-header">
+            Login Form
+         </header>
+
+         <div class="login-body">
+            <label for="username" class="login-label">
+               Username
+            </label>
+            <input id="username" type="text" class="login-input" placeholder="Enter username" required>
+
+            <label for="login-password" class="login-label">
+               Password
+            </label>
+            <input id="login-password" type="password" class="login-input" placeholder="Enter password" required>
+
+            <button type="submit" id="login">
+               Login <i class="fa-solid fa-check"></i>
+            </button>
+         </div>
+
+         <footer class="login-footer">
+            <p class="login-help">Forgot <a href="#">password?</a></p>
+         </footer>
+      </div>
+   </div>
+   <!-- End: Open login form -->
+
+   <!-- Begin: Open signup form -->
+   <div class="form-sign-up js-signUp">
+      <div class="login-container js-signUp-container">
+         <div class="login-close-btn js-signUp-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+         </div>
+
+         <header class="login-header">
+            Sign up Form
+         </header>
+
+         <div class="login-body">
+            <label for="email" class="login-label">
+               Email
+            </label>
+            <input id="email" type="email" class="login-input" placeholder="Enter email" required>
+
+            <label for="password" class="login-label">
+               Password
+            </label>
+            <input id="password" type="password" class="login-input" placeholder="Enter password" required>
+
+            <label for="repeat-password" class="login-label">
+               Repeat Password
+            </label>
+            <input id="repeat-password" type="password" class="login-input" placeholder="Repeat password" required>
+
+            <button type="submit" id="login">
+               Sign Up <i class="fa-solid fa-check"></i>
+            </button>
+         </div>
+
+         <footer class="login-footer">
+            <p class="login-help">By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+         </footer>
+      </div>
+   </div>
+   <!-- End: Open signup form -->
+
    <!-- Grid 1: Start chứa menu sidebar bên trái -->
    <div class="grid-1">
       <div class="sidebar">
@@ -68,6 +144,18 @@
             </a>
          </div>
       </div>
+      
+      <!-- Begin: Button Login and Sign Up -->
+      <div id="login_and_signup">
+         <div class="login-text">Đăng nhập để khám phá playlist dành riêng cho bạn</div>
+         <button class="btn-login js-action-login s-full-width">Đăng nhập</button>
+      </div>
+
+      <div id="login_and_signup">
+         <div class="login-text">Nghe nhạc không giới hạn cùng kho nhạc VIP</div>
+         <button class="btn-login js-action-signUp s-full-width">Đăng ký</button>
+      </div>
+      <!-- End: Button Login and Sign Up -->
    </div>
    <!-- Grid 1: End chứa menu sidebar bên trái -->
 
@@ -4974,6 +5062,8 @@
 
    <script src="{{url('/assets/js/ca_nhan.js')}}"></script>
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
+   <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
+
 </body>
 
 </html>
