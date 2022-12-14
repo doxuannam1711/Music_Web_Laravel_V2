@@ -35,9 +35,11 @@ var imageDataMusic = document.querySelectorAll(".table-data-musics-image")
 //   }
 //   return songss;
 // }
+
+// console.log(obj);
+
 var obj = [
 ]
-
 for (var i = 0; i < singerDataMusic.length; i++) {
   let _nameDataMusic = nameDataMusic[i].textContent
   let _singerDataMusic = singerDataMusic[i].textContent
@@ -54,117 +56,14 @@ for (var i = 0; i < singerDataMusic.length; i++) {
   // console.log(objTemp);
   obj.push(objTemp);
 }
-// console.log(obj);
 
 var app = {
   currentIndex: 0,
   isPLaying: false,
   isRandom: false,
   isRepeat: false,
-  songs: [
-    {
-      name: "1 Second For Test",
-      singer: "Second man",
-      path: "./assets/musics/1sec.mp3",
-      image: "./assets/img/1sec.png",
-    },
-    {
-      name: "Lạ Lùng",
-      singer: "Vũ",
-      path: "./assets/musics/Lạ_Lùng _Vũ.mp3",
-      image: "./assets/img/Vu_Ti_Hong.jpg",
-    },
-    {
-      name: "Happy For You",
-      singer: "Lukas Graham (feat Vũ)",
-      path: "./assets/musics/Lukas Graham Happy For You .mp3",
-      image: "./assets/img/HappyForYou.png",
-    },
-    {
-      name: "Snowman",
-      singer: "Sia",
-      path: "./assets/musics/Snowman_Sia.mp3",
-      image: "./assets/img/Sia_Snowman.jpg",
-    },
-    {
-      name: "My Love",
-      singer: "West Life",
-      path: "./assets/musics/Westlife_MyLove.mp3",
-      image: "./assets/img/WestLife_MyLove.jpg",
-    },
-    {
-      name: "I Do",
-      singer: "911",
-      path: "./assets/musics/I_Do _911_Band.mp3",
-      image: "./assets/img/I_Do_911.jpg",
-    },
-    {
-      name: "Beautiful in white",
-      singer: "West Life",
-      path: "./assets/musics/Westlife_Beautiful in white.mp3",
-      image: "./assets/img/beautiful_in_white.png",
-    },
-    {
-      name: "Just give me a reason",
-      singer: "P!nk",
-      path: "./assets/musics/P!nk_Just Give Me A Reason ft Nate Ruess.mp3",
-      image: "./assets/img/Just_give_me_a_reason.jpg",
-    },
-    {
-      name: "When You Tell Me That You Love Me",
-      singer: "West Life with Diana Ross",
-      path: "./assets/musics/Westlife_When You Tell Me That You Love Me Official Video with Diana Ross.mp3",
-      image:
-        "./assets/img/When You Tell Me That You Love Me Official Video with Diana Ross.png",
-    },
-    {
-      name: "Soledad",
-      singer: "West Life",
-      path: "./assets/musics/Westlife_Soledad.mp3",
-      image: "./assets/img/Soledad.jpg",
-    },
-    {
-      name: "TO THE MOON",
-      singer: "hooligan",
-      path: "./assets/musics/TO THE MOON_hooligan.mp3",
-      image: "./assets/img/TO THE MOON.jpg",
-    },
-    {
-      name: "Talking To The Moon",
-      singer: "Bruno Mars",
-      path: "./assets/musics/Bruno Mars_Talking To The Moon.mp3",
-      image: "./assets/img/Talking to the moon.jpg",
-    },
-    // {
-    //     name: "",
-    //     singer: "",
-    //     path: "/musics/Snowman_Sia.mp3",
-    //     image: "/img/Sia_Snowman.jpg",
-    // },
-  ],
-  
   render: function () {
 
-
-    var obj = [
-    ]
-    
-    for (var i = 0; i < singerDataMusic.length; i++) {
-      let _nameDataMusic = nameDataMusic[i].textContent
-      let _singerDataMusic = singerDataMusic[i].textContent
-      let _pathDataMusic = pathDataMusic[i].textContent
-      let _imageDataMusic = imageDataMusic[i].textContent
-      let path_default = "./assets/musics/"
-      let image_default = "./assets/img/"
-      let objTemp = {
-        name: `${_nameDataMusic}`,
-        singer: `${_singerDataMusic}`,
-        path: `${path_default}${_pathDataMusic}`,
-        image: `${image_default}${_imageDataMusic}`
-      }
-      // console.log(objTemp);
-      obj.push(objTemp);
-    }
     console.log(obj);
     const htmls = obj.map((song, index) => {
       return `
@@ -305,7 +204,7 @@ var app = {
   defineProperties: function () {
     Object.defineProperty(this, "currentSong", {
       get: function () {
-        return app.songs[this.currentIndex];
+        return obj[this.currentIndex];
       },
     });
   },
