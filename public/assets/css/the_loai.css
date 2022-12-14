@@ -113,6 +113,7 @@ a {
     padding-left: 35px;
     transition: 0.3s;
     border-inline-start: 0px solid #1a00af;
+    text-decoration: none;
 }
 
 .sidebar .nav-menu-1 a:hover,
