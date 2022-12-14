@@ -1,3 +1,4 @@
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -16,7 +17,46 @@ const nextBtn = $(".btn-next");
 const randomBtn = $(".btn-random");
 const repeatBtn = $(".btn-repeat");
 
-const app = {
+
+
+
+var nameDataMusic = document.querySelectorAll(".table-data-musics-name")
+var singerDataMusic = document.querySelectorAll(".table-data-musics-singer")
+var pathDataMusic = document.querySelectorAll(".table-data-musics-path")
+var imageDataMusic = document.querySelectorAll(".table-data-musics-image")
+
+
+// var songss = function (nameDataMusic, singerDataMusic, pathDataMusic, imageDataMusic) {
+//   for (var i = 0; i < singerDataMusic.length; i++) {
+//     songss.name = nameDataMusic.textContent;
+//     songss.singer = singerDataMusic.textContent
+//     songss.path = pathDataMusic.textContent
+//     songss.imageDataMusic = imageDataMusic.textContent
+//   }
+//   return songss;
+// }
+var obj = [
+]
+
+for (var i = 0; i < singerDataMusic.length; i++) {
+  let _nameDataMusic = nameDataMusic[i].textContent
+  let _singerDataMusic = singerDataMusic[i].textContent
+  let _pathDataMusic = pathDataMusic[i].textContent
+  let _imageDataMusic = imageDataMusic[i].textContent
+  let path_default = "./assets/musics/"
+  let image_default = "./assets/img/"
+  let objTemp = {
+    name: `${_nameDataMusic}`,
+    singer: `${_singerDataMusic}`,
+    path: `${path_default}${_pathDataMusic}`,
+    image: `${image_default}${_imageDataMusic}`
+  }
+  // console.log(objTemp);
+  obj.push(objTemp);
+}
+// console.log(obj);
+
+var app = {
   currentIndex: 0,
   isPLaying: false,
   isRandom: false,
@@ -102,14 +142,35 @@ const app = {
     //     image: "/img/Sia_Snowman.jpg",
     // },
   ],
-
+  
   render: function () {
-    const htmls = this.songs.map((song, index) => {
+
+
+    var obj = [
+    ]
+    
+    for (var i = 0; i < singerDataMusic.length; i++) {
+      let _nameDataMusic = nameDataMusic[i].textContent
+      let _singerDataMusic = singerDataMusic[i].textContent
+      let _pathDataMusic = pathDataMusic[i].textContent
+      let _imageDataMusic = imageDataMusic[i].textContent
+      let path_default = "./assets/musics/"
+      let image_default = "./assets/img/"
+      let objTemp = {
+        name: `${_nameDataMusic}`,
+        singer: `${_singerDataMusic}`,
+        path: `${path_default}${_pathDataMusic}`,
+        image: `${image_default}${_imageDataMusic}`
+      }
+      // console.log(objTemp);
+      obj.push(objTemp);
+    }
+    console.log(obj);
+    const htmls = obj.map((song, index) => {
       return `
             
-                <div class="song ${
-                  index === app.currentIndex ? "active" : ""
-                }" data-index="${index}">
+                <div class="song ${index === app.currentIndex ? "active" : ""
+        }" data-index="${index}">
                     <div class="thumb" 
                         style="background-image: url('${song.image}')">
                     </div>
@@ -258,7 +319,7 @@ const app = {
   //Next Song
   nextSong: function () {
     this.currentIndex++;
-    if (this.currentIndex >= this.songs.length) {
+    if (this.currentIndex >= obj.length) {
       this.currentIndex = 0;
     }
     this.loadCurrentSong();
@@ -267,7 +328,7 @@ const app = {
   prevSong: function () {
     this.currentIndex--;
     if (this.currentIndex < 0) {
-      this.currentIndex = this.songs.length - 1;
+      this.currentIndex = obj.length - 1;
     }
     this.loadCurrentSong();
   },
@@ -275,7 +336,7 @@ const app = {
   playRandomSong: function () {
     let newSong;
     do {
-      newSong = Math.floor(Math.random() * this.songs.length);
+      newSong = Math.floor(Math.random() * obj.length);
     } while (newSong === this.currentIndex);
     this.currentIndex = newSong;
     this.loadCurrentSong();

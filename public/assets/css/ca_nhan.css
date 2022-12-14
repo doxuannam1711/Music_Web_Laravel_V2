@@ -272,3 +272,9 @@ footer .singer {
   margin-top: 2px;
   font-size: 12px;
 }
+
+
+/* ad min  */
+.table_admin {
+  color: var(--text-white);
+}
