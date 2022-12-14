@@ -107,6 +107,7 @@ a {
   max-height: fit-content;
   position: relative;
   left: 280px;
+  margin-bottom: 50px;
 }
 
 .header-top {

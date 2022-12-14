@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* initial style */
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +14,7 @@
     --secondary-color: #191f51;
     --icon-size: 58px;
     --white: white;
-    --scale-hover: 1.0;
+    --scale-hover: 1;
 }
 
 .absolute {
@@ -41,7 +40,7 @@ body {
     padding-left: 35px;
 }
 
-.element--head-cover:hover .cover-play-btn{
+.element--head-cover:hover .cover-play-btn {
     opacity: 1;
     transition: 1s;
 }
@@ -59,7 +58,7 @@ body {
 .icon-play-200 {
     font-size: 200%;
     padding-top: 60px;
-        display: flex;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -89,8 +88,6 @@ a {
 
 /* style header */
 
-
-
 .sidebar .logo-brand {
     padding-top: 15px;
     margin-bottom: 20px;
@@ -103,7 +100,6 @@ a {
     min-height: 100vh;
     width: 240px;
 }
-
 
 .sidebar .nav-menu-1 a,
 .sidebar .nav-menu-2 a {
@@ -124,6 +120,7 @@ a {
     border-inline-start: 3px solid #7970b1;
     color: white;
     background-color: #1e2450;
+    text-decoration: none;
 }
 
 .nav-icon i {
@@ -134,7 +131,7 @@ a {
 
 .divider {
     display: block;
-    border-top: .5px solid rgba(148, 148, 148, 0.212);
+    border-top: 0.5px solid rgba(148, 148, 148, 0.212);
     margin: 20px 35px;
 }
 
@@ -186,18 +183,15 @@ span.search-icon {
     left: 0;
 }
 
-
 #header__nav-input {
     display: none;
 
     cursor: pointer;
 }
 
-
 .user-function {
     display: flex;
 }
-
 
 .user-function .func,
 .header__nav-btn {
@@ -234,16 +228,13 @@ span.search-icon {
 
 /* section 1: slide */
 
-
 .slides .slide-component {
     width: calc(100% / 3 - 20px);
     border-radius: 12px;
     margin: 5px;
 }
 
-
 /* section 2: playlist 1 */
-
 
 .playlist--hot-hit {
     display: flex;
@@ -269,7 +260,7 @@ span.search-icon {
 
 .element--title p {
     font-size: 12px;
-    color: #a19ac3
+    color: #a19ac3;
 }
 
 .playlist--carousel {
@@ -289,12 +280,11 @@ span.search-icon {
     border-radius: 4px;
     box-sizing: border-box;
     min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.500);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     bottom: 0;
 }
-
 
 .element--head {
     width: 200px;
@@ -312,16 +302,16 @@ span.search-icon {
 }
 
 .bg--rec-1 {
-    background-image: url('././assetsassets/img/assets-the_loai/nhacviet.bmp');
+    background-image: url("././assetsassets/img/assets-the_loai/nhacviet.bmp");
 }
 .bg--rec-2 {
-    background-image: url('../assetsassets/img/assets-the_loai/nhachan.bmp');
+    background-image: url("../assetsassets/img/assets-the_loai/nhachan.bmp");
 }
 .bg--rec-3 {
-    background-image: url('./assets/img/assets-the_loai/nhachoa.bmp');
+    background-image: url("./assets/img/assets-the_loai/nhachoa.bmp");
 }
 .bg--rec-4 {
-    background-image: url('./assets/img/assets-the_loai/nhacaumi.bmp');
+    background-image: url("./assets/img/assets-the_loai/nhacaumi.bmp");
 }
 
 .rec-nation {
@@ -343,7 +333,6 @@ span.search-icon {
     display: block !important;
 }
 
-
 .element--rec-cover {
     width: 260px;
     height: 150px;
@@ -355,10 +344,9 @@ span.search-icon {
     background-size: auto;
     background-repeat: no-repeat;
     overflow: hidden;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
     transform: scale(1.05);
 }
-
 
 .pl-element .func--play {
     display: none;
@@ -400,7 +388,7 @@ span.search-icon {
     border-radius: 10px;
 }
 
-.main-img-board:hover img{
+.main-img-board:hover img {
     scale: 1.05;
     transition: 0.5s;
 }
