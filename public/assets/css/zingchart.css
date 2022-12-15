@@ -3011,3 +3011,9 @@ label .container__header-icon {
     content: "\f141";
     color: #fff;
 }
+
+.edit-container {
+    background-color: #fff;
+    font-size: 15px;
+    /* position: relative; */
+}
