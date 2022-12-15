@@ -6783,6 +6783,7 @@
    <script src="{{url('/assets/js/admin.js')}}"></script>
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
    <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
+   <script src="{{url('/assets/js/chart.js')}}"></script>
 
 </body>
 
