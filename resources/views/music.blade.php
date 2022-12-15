@@ -300,7 +300,7 @@
          <div class="charts__container">
             <div class="grid">
                <div class="chart__container-header mb-40">
-                  <h3 class="chart__header-name">#zingchart</h3>
+                  <h3 class="chart__header-name">#Music chart</h3>
                   <div class="chart__header-btn">
                      <i class="fa-solid fa-play chart__header-icon"></i>
                   </div>
@@ -4895,7 +4895,7 @@
    </div>
    <!-- End thanh phát nhạc bên dưới -->
 
-   <script src="{{url('/assets/js/admin.js')}}"></script>
+   <script src="{{url('/assets/js/ca_nhan.js')}}"></script>
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
    <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
 

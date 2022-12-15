@@ -158,3 +158,24 @@ html {
     transform: translateY(0);
   }
 }
+/* Button Logout */
+.btn-logout {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  height: 38.5px;
+  background-color: #000;
+  text-align: center;
+  line-height: 38.5px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  /* Bỏ đi style mặc định mà được cái trình duyệt Chrome áp vào */
+  appearance: none;
+  /* Bỏ đi style mặc định mà được cái trình duyệt Safari áp vào */
+  -webkit-appearance: none;
+  padding: 0 20px;
+}

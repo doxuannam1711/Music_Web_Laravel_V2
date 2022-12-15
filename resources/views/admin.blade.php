@@ -232,8 +232,11 @@
             <a href="#" class="button3 func"><i class="fa-solid fa-gear"></i></a>
             <a href="#" class="button5 user">
                <i class="fa-solid fa-user"></i>
-               <span>Nhóm PT Web</span>
+               <span>Admin</span>
             </a>
+            <form action="http://127.0.0.1:8000/">
+               <button class="btn-logout">Đăng xuất</button>
+            </form>
          </div>
       </div>
       <!-- End header chứa thanh tìm kiếm -->
@@ -380,7 +383,7 @@
          <div class="charts__container">
             <div class="grid">
                <div class="chart__container-header mb-40">
-                  <h3 class="chart__header-name">#zingchart</h3>
+                  <h3 class="chart__header-name">#Music chart</h3>
                   <div class="chart__header-btn">
                      <i class="fa-solid fa-play chart__header-icon"></i>
                   </div>

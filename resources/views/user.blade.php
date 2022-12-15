@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +26,7 @@
 </head>
 
 <body style="user-select: none;">
-   
+
    <!-- Begin: Open login form -->
    <div class="form-login js-login">
       <div class="login-container js-login-container">
@@ -145,7 +144,7 @@
             </a>
          </div>
       </div>
-      
+
       <!-- Begin: Button Login and Sign Up -->
       <!-- <div id="login_and_signup">
          <div class="login-text">Đăng nhập để khám phá playlist dành riêng cho bạn</div>
@@ -160,7 +159,7 @@
    </div>
    <!-- Grid 1: End chứa menu sidebar bên trái -->
 
-<!-- Start grid 2: -->
+   <!-- Start grid 2: -->
    <div class="grid-2">
 
       <!-- Start header chứa thanh tìm kiếm -->
@@ -184,8 +183,11 @@
             <a href="#" class="button3 func"><i class="fa-solid fa-gear"></i></a>
             <a href="#" class="button5 user">
                <i class="fa-solid fa-user"></i>
-               <span>Nhóm PT Web</span>
+               <span>User</span>
             </a>
+            <form action="http://127.0.0.1:8000/">
+               <button class="btn-logout">Đăng xuất</button>
+            </form>
          </div>
       </div>
       <!-- End header chứa thanh tìm kiếm -->
@@ -193,39 +195,40 @@
 
       <!-- Start trang cá nhân -->
       <div id="tabCaNhan">
-      <table class="table table_admin table-bordered" style="display: none" >
-      <thead>
-         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>singer</th>
-            <th>path</th>
-            <th>image</th>
-            <th width="5%">Edit</th>
-            <th width="5%">Remove</th>
-         </tr>
-      </thead>
-      <tbody @foreach ($musics as $key=> $item)
-         <tr>
-            <td>{{$item->id}}</td>
-            <td class="table-data-musics-name">{{$item->name}}</td>
-            <td class="table-data-musics-singer">{{$item->singer}}</td>
-            <td class="table-data-musics-path">{{$item->path}}</td>
-            <td class="table-data-musics-image">{{$item->image}}</td>
-            <td>
-               <a href="{{route('admin.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Edit</a>
-            </td>
-            <td>
-               <a onclick="return confirm('Bạn có chắc chắn muốn xoá')" href="{{route('admin.delete', ['id' => $item->id])}}" class="btn btn-danger btn-sm">Remove</a>
-            </td>
-         </tr>
+         <table class="table table_admin table-bordered" style="display: none">
+            <thead>
+               <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>singer</th>
+                  <th>path</th>
+                  <th>image</th>
+                  <th width="5%">Edit</th>
+                  <th width="5%">Remove</th>
+               </tr>
+            </thead>
+            <tbody @foreach ($musics as $key=> $item)
+               <tr>
+                  <td>{{$item->id}}</td>
+                  <td class="table-data-musics-name">{{$item->name}}</td>
+                  <td class="table-data-musics-singer">{{$item->singer}}</td>
+                  <td class="table-data-musics-path">{{$item->path}}</td>
+                  <td class="table-data-musics-image">{{$item->image}}</td>
+                  <td>
+                     <a href="{{route('admin.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Edit</a>
+                  </td>
+                  <td>
+                     <a onclick="return confirm('Bạn có chắc chắn muốn xoá')"
+                        href="{{route('admin.delete', ['id' => $item->id])}}" class="btn btn-danger btn-sm">Remove</a>
+                  </td>
+               </tr>
 
-      </tbody>
-      @endforeach
-   </table>
-   <!-- <a href="{{route('admin.add')}}" class="btn btn-primary">Add</a> -->
+            </tbody>
+            @endforeach
+         </table>
+         <!-- <a href="{{route('admin.add')}}" class="btn btn-primary">Add</a> -->
 
-   <span class="testTEXT" style="color: azure;"></span>
+         <span class="testTEXT" style="color: azure;"></span>
          <div class="player-container">
             <div class="player-right">
                <div class="play-list">
@@ -332,7 +335,7 @@
          <div class="charts__container">
             <div class="grid">
                <div class="chart__container-header mb-40">
-                  <h3 class="chart__header-name">#zingchart</h3>
+                  <h3 class="chart__header-name">#Music chart</h3>
                   <div class="chart__header-btn">
                      <i class="fa-solid fa-play chart__header-icon"></i>
                   </div>

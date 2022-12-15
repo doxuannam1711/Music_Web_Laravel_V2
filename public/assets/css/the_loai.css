@@ -158,7 +158,9 @@ a {
     background-color: var(--background);
     z-index: 99;
 }
-
+.header-top a{
+   text-decoration: none;
+}
 .search-bar {
     position: relative;
 }
