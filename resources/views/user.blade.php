@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="{{url('/assets/font/font/css/all.css')}}">
 
    <link rel="stylesheet" href="{{url('/assets/css/khampha.css')}}">
@@ -26,7 +27,7 @@
 </head>
 
 <body style="user-select: none;">
-
+   
    <!-- Begin: Open login form -->
    <div class="form-login js-login">
       <div class="login-container js-login-container">
@@ -42,19 +43,16 @@
             <label for="username" class="login-label">
                Username
             </label>
-            <input id="username" type="text" class="login-input login-input-username" placeholder="Enter username" required>
+            <input id="username" type="text" class="login-input" placeholder="Enter username" required>
 
             <label for="login-password" class="login-label">
                Password
             </label>
-            <input id="login-password" type="password" class="login-input login-input-password" placeholder="Enter password" required>
-            <a href="#" class = "a_login" >
-                              <button type="submit" id="login">
+            <input id="login-password" type="password" class="login-input" placeholder="Enter password" required>
 
-                  Login <i class="fa-solid fa-check"></i>
-
-               </button>
-            </a>
+            <button type="submit" id="login">
+               Login <i class="fa-solid fa-check"></i>
+            </button>
          </div>
 
          <footer class="login-footer">
@@ -107,7 +105,8 @@
    <div class="grid-1">
       <div class="sidebar">
          <div class="logo-brand pl-35">
-            <img onclick="changeTo_tabCaNhan()" src="{{url('assets/img/assets-khampha/logo.png')}}" width="100" height="100%" alt="logo brand">
+            <img onclick="changeTo_tabCaNhan()" src="{{url('assets/img/assets-khampha/logo.png')}}" width="100"
+               height="100%" alt="logo brand">
          </div>
          <!-- menu 1 -->
          <div class="nav-menu-1">
@@ -146,9 +145,9 @@
             </a>
          </div>
       </div>
-
+      
       <!-- Begin: Button Login and Sign Up -->
-      <div id="login_and_signup">
+      <!-- <div id="login_and_signup">
          <div class="login-text">Đăng nhập để khám phá playlist dành riêng cho bạn</div>
          <button class="btn-login js-action-login s-full-width">Đăng nhập</button>
       </div>
@@ -156,12 +155,12 @@
       <div id="login_and_signup">
          <div class="login-text">Nghe nhạc không giới hạn cùng kho nhạc VIP</div>
          <button class="btn-login js-action-signUp s-full-width">Đăng ký</button>
-      </div>
+      </div> -->
       <!-- End: Button Login and Sign Up -->
    </div>
    <!-- Grid 1: End chứa menu sidebar bên trái -->
 
-   <!-- Start grid 2: -->
+<!-- Start grid 2: -->
    <div class="grid-2">
 
       <!-- Start header chứa thanh tìm kiếm -->
@@ -194,7 +193,40 @@
 
       <!-- Start trang cá nhân -->
       <div id="tabCaNhan">
-         <div class="player-container" style="display: none">
+      <table class="table table_admin table-bordered" style="display: none" >
+      <thead>
+         <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>singer</th>
+            <th>path</th>
+            <th>image</th>
+            <th width="5%">Edit</th>
+            <th width="5%">Remove</th>
+         </tr>
+      </thead>
+      <tbody @foreach ($musics as $key=> $item)
+         <tr>
+            <td>{{$item->id}}</td>
+            <td class="table-data-musics-name">{{$item->name}}</td>
+            <td class="table-data-musics-singer">{{$item->singer}}</td>
+            <td class="table-data-musics-path">{{$item->path}}</td>
+            <td class="table-data-musics-image">{{$item->image}}</td>
+            <td>
+               <a href="{{route('admin.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Edit</a>
+            </td>
+            <td>
+               <a onclick="return confirm('Bạn có chắc chắn muốn xoá')" href="{{route('admin.delete', ['id' => $item->id])}}" class="btn btn-danger btn-sm">Remove</a>
+            </td>
+         </tr>
+
+      </tbody>
+      @endforeach
+   </table>
+   <!-- <a href="{{route('admin.add')}}" class="btn btn-primary">Add</a> -->
+
+   <span class="testTEXT" style="color: azure;"></span>
+         <div class="player-container">
             <div class="player-right">
                <div class="play-list">
                   <!-- <div class="song">
@@ -325,9 +357,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -375,9 +409,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -428,9 +464,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -478,9 +516,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -529,9 +569,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -583,9 +625,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -636,9 +680,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -685,9 +731,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -738,9 +786,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -790,9 +840,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song10.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song10.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -842,9 +894,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song11.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song11.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -892,9 +946,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song12.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song12.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -944,9 +1000,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song13.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song13.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -996,9 +1054,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song14.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song14.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1047,9 +1107,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song15.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song15.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1096,9 +1158,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song16.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song16.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1145,9 +1209,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song17.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song17.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1195,9 +1261,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song18.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song18.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1247,9 +1315,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song19.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song19.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1298,9 +1368,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song20.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song20.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1347,9 +1419,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song21.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song21.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1397,9 +1471,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song22.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song22.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1452,9 +1528,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song23.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song23.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1501,9 +1579,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song24.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song24.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1552,9 +1632,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song25.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song25.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1601,9 +1683,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song26.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song26.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1650,9 +1734,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song27.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song27.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1700,9 +1786,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song28.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song28.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1751,9 +1839,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song29.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song29.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1801,9 +1891,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1881,9 +1973,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1931,9 +2025,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1984,9 +2080,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2034,9 +2132,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2085,9 +2185,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2139,9 +2241,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2192,9 +2296,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2241,9 +2347,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2294,9 +2402,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2346,9 +2456,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2398,9 +2510,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2448,9 +2562,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2500,9 +2616,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2552,9 +2670,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/diudang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/diudang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2603,9 +2723,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/emhat.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/emhat.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2652,9 +2774,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/vayla.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/vayla.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2701,9 +2825,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/vanganh.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/vanganh.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2751,9 +2877,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/neuluctruoc.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/neuluctruoc.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2803,9 +2931,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/codon.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/codon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2854,9 +2984,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/money.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/money.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2903,9 +3035,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/yeuma.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/yeuma.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2953,9 +3087,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/dotoc.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/dotoc.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3008,9 +3144,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/chieudongque.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/chieudongque.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3057,9 +3195,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/tupleuvang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/tupleuvang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3108,9 +3248,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/lalisa.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/lalisa.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3157,9 +3299,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/saicachyeu.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/saicachyeu.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3206,9 +3350,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/cohen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/cohen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3256,9 +3402,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/emnaocotoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/emnaocotoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3307,9 +3455,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/nhantoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/nhantoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3357,9 +3507,11 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3416,7 +3568,8 @@
             <div class="playlist--hot-hit white">
                <div class="playlist--carousel">
                   <div class="pl-element">
-                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhacviet.bmp');">
+                     <div class="element--rec"
+                        style="background-image: url('./assets/img/assets-the_loai/nhacviet.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3428,7 +3581,8 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhachan.bmp');">
+                     <div class="element--rec"
+                        style="background-image: url('./assets/img/assets-the_loai/nhachan.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3440,7 +3594,8 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhachoa.bmp');">
+                     <div class="element--rec"
+                        style="background-image: url('./assets/img/assets-the_loai/nhachoa.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart fa-icon"></i>
@@ -3452,7 +3607,8 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhacaumi.bmp');">
+                     <div class="element--rec"
+                        style="background-image: url('./assets/img/assets-the_loai/nhacaumi.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3718,7 +3874,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3740,7 +3897,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3764,7 +3922,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3812,7 +3971,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3849,7 +4009,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3871,7 +4032,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3895,7 +4057,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3919,7 +4082,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3943,7 +4107,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3968,7 +4133,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -3990,7 +4156,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4014,7 +4181,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4038,7 +4206,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4062,7 +4231,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4087,7 +4257,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4109,7 +4280,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4133,7 +4305,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4157,7 +4330,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4191,7 +4365,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4213,7 +4388,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4237,7 +4413,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4261,7 +4438,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4285,7 +4463,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4318,7 +4497,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4340,7 +4520,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4364,7 +4545,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4388,7 +4570,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4412,7 +4595,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4437,7 +4621,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4459,7 +4644,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4483,7 +4669,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4531,7 +4718,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4556,7 +4744,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4578,7 +4767,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4602,7 +4792,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4634,7 +4825,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4656,7 +4848,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4680,7 +4873,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4704,7 +4898,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4728,7 +4923,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4752,7 +4948,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4776,7 +4973,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4800,7 +4998,8 @@
                      <div class="card-item">
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>

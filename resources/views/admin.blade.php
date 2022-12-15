@@ -195,7 +195,7 @@
       </div>
       
       <!-- Begin: Button Login and Sign Up -->
-      <div id="login_and_signup">
+      <!-- <div id="login_and_signup">
          <div class="login-text">Đăng nhập để khám phá playlist dành riêng cho bạn</div>
          <button class="btn-login js-action-login s-full-width">Đăng nhập</button>
       </div>
@@ -203,7 +203,7 @@
       <div id="login_and_signup">
          <div class="login-text">Nghe nhạc không giới hạn cùng kho nhạc VIP</div>
          <button class="btn-login js-action-signUp s-full-width">Đăng ký</button>
-      </div>
+      </div> -->
       <!-- End: Button Login and Sign Up -->
    </div>
    <!-- Grid 1: End chứa menu sidebar bên trái -->
@@ -241,39 +241,39 @@
 
       <!-- Start trang cá nhân -->
       <div id="tabCaNhan">
-      <table class="table table_admin table-bordered">
-      <thead>
-         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>singer</th>
-            <th>path</th>
-            <th>image</th>
-            <th width="5%">Edit</th>
-            <th width="5%">Remove</th>
-         </tr>
-      </thead>
-      <tbody @foreach ($musics as $key=> $item)
-         <tr>
-            <td>{{$item->id}}</td>
-            <td class="table-data-musics-name">{{$item->name}}</td>
-            <td class="table-data-musics-singer">{{$item->singer}}</td>
-            <td class="table-data-musics-path">{{$item->path}}</td>
-            <td class="table-data-musics-image">{{$item->image}}</td>
-            <td>
-               <a href="{{route('admin.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Edit</a>
-            </td>
-            <td>
-               <a onclick="return confirm('Bạn có chắc chắn muốn xoá')" href="{{route('admin.delete', ['id' => $item->id])}}" class="btn btn-danger btn-sm">Remove</a>
-            </td>
-         </tr>
+         <table class="table table_admin table-bordered">
+            <thead>
+               <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>singer</th>
+                  <th>path</th>
+                  <th>image</th>
+                  <th width="5%">Edit</th>
+                  <th width="5%">Remove</th>
+               </tr>
+            </thead>
+            <tbody @foreach ($musics as $key=> $item)
+               <tr>
+                  <td>{{$item->id}}</td>
+                  <td class="table-data-musics-name">{{$item->name}}</td>
+                  <td class="table-data-musics-singer">{{$item->singer}}</td>
+                  <td class="table-data-musics-path">{{$item->path}}</td>
+                  <td class="table-data-musics-image">{{$item->image}}</td>
+                  <td>
+                     <a href="{{route('admin.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Edit</a>
+                  </td>
+                  <td>
+                     <a onclick="return confirm('Bạn có chắc chắn muốn xoá')" href="{{route('admin.delete', ['id' => $item->id])}}" class="btn btn-danger btn-sm">Remove</a>
+                  </td>
+               </tr>
 
-      </tbody>
-      @endforeach
-   </table>
-   <a href="{{route('admin.add')}}" class="btn btn-primary">Add</a>
+            </tbody>
+            @endforeach
+         </table>
+         <a href="{{route('admin.add')}}" class="btn btn-primary">Add</a>
 
-   <span class="testTEXT" style="color: azure;"></span>
+         <span class="testTEXT" style="color: azure;"></span>
          <div class="player-container">
             <div class="player-right">
                <div class="play-list">

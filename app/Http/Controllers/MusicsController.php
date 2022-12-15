@@ -12,6 +12,7 @@ class MusicsController extends Controller
         $title = 'Bo may la tuong';
 
         $musics = DB::select('SELECT * FROM musics');
+      //   $top100 = DB::select('SELECT * FROM top100');
 
         return view('admin', compact('title', 'musics'));
     }
