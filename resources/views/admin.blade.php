@@ -461,7 +461,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:11</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn" value="1">
+                                 <div class="playlist__song-btn" value="31">
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2111,7 +2111,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:41</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="31">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2166,7 +2166,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:56</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="32">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2221,7 +2221,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:10</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="33">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2277,7 +2277,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:26</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="34">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2332,7 +2332,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="35">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2390,7 +2390,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:40</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="36">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2444,7 +2444,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:26</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="37">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2501,7 +2501,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:15</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="38">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2557,7 +2557,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="39">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2613,7 +2613,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:10</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="40">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2667,7 +2667,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:07</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="41">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2721,7 +2721,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="42">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2776,7 +2776,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:12</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="43">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2830,7 +2830,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:05</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="44">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2882,7 +2882,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="45">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2934,7 +2934,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:15</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="46">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -2987,7 +2987,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="47">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3042,7 +3042,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:35</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="48">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3096,7 +3096,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="49">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3148,7 +3148,7 @@
                               </div>
                               <span class="playlist__song-time media__content">02:48</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="50">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3201,7 +3201,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="51">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3259,7 +3259,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="52">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3311,7 +3311,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:20</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="53">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3365,7 +3365,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:31</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="54">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3417,7 +3417,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="55">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3469,7 +3469,7 @@
                               </div>
                               <span class="playlist__song-time media__content">05:42</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="56">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3522,7 +3522,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:38</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="57">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3576,7 +3576,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="58">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3629,7 +3629,7 @@
                               </div>
                               <span class="playlist__song-time media__content">03:55</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="59">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -3684,7 +3684,7 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn">
+                                 <div class="playlist__song-btn" value="60">>
                                     <button class="btn btn-warning chart__btn-edit">Edit</button>
                                  </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
@@ -6784,6 +6784,7 @@
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
    <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
    <script src="{{url('/assets/js/chart.js')}}"></script>
+   <script src="{{url('/assets/js/top100_openEditForm.js')}}"></script>
 
 </body>
 

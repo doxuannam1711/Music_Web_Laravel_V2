@@ -19,6 +19,7 @@ btnEditChartEl.forEach(function(btn) {
     btn.addEventListener("click", function() {
         key = btn.parentElement.getAttribute("value")
         formEditEl.style.display = "block"
+        console.log(key)
 
     })
 })
