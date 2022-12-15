@@ -1,0 +1,27 @@
+
+.container-btn-top100-edit-Form{
+   width: 213.5px;
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 10px;
+}
+.btn-top100-edit-Form {
+   /* text-transform: uppercase; */
+   font-size: 12px;
+   color: #fff;
+   display: inline-block;
+   width: 30%;
+   text-align: center;
+   line-height: 35px;
+   text-decoration: none;
+   border-radius:50px;
+   cursor: pointer;
+   background-color: #f0ad4e;
+   /* Bỏ đi style mặc định mà được cái trình duyệt Chrome áp vào */
+   appearance: none;
+   /* Bỏ đi style mặc định mà được cái trình duyệt Safari áp vào */
+   -webkit-appearance: none;
+}
+.btn-top100-edit-Form:hover{
+   opacity:0.8;
+}

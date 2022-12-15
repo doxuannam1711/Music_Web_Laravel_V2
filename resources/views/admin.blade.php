@@ -67,6 +67,9 @@
 
    <link rel="stylesheet" href="{{url('/assets/css/login_form.css')}}">
 
+   <link rel="stylesheet" href="{{url('/assets/css/top100_editForm.css')}}">
+
+
    <link rel="stylesheet" href="{{url('/assets/css/base.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/zingchart.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/normalize.min.css')}}">
@@ -2013,11 +2016,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          is-outline--blue
-                                                                          
-                                                                          
-                                                                          
-                                                                      ">
+                                                                  is-outline--blue
+                                                                  
+                                                                  
+                                                                  
+                                                               ">
                                        1
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2025,10 +2028,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/dunglo.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/dunglo.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2038,16 +2041,15 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Chưa Bao Giờ Em
-                                       Quên</span>
+                                    <span class="playlist__song-title info__title">Đừng Lo Nhé! Có Anh Đây</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Hương Ly</a>
+                                       <a href="#" class="is-ghost">Thiên Tú</a>
 
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">05:11</span>
+                              <span class="playlist__song-time media__content">04:41</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
@@ -2065,11 +2067,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          is-outline--green
-                                                                          
-                                                                          
-                                                                      ">
+                                                                  
+                                                                  is-outline--green
+                                                                  
+                                                                  
+                                                               ">
                                        2
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2077,10 +2079,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/honem.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/honem.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2090,19 +2092,16 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Yêu Là Cưới</span>
+                                    <span class="playlist__song-title info__title">Hơn Em Chỗ Nào</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Phát Hồ</a>,
+                                       <a href="#" class="is-ghost">Thuỳ Chi</a>
 
-                                       <a href="#" class="is-ghost">X2X</a>,
-
-                                       <a href="#" class="is-ghost"></a>
-
+                                       
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">02:59</span>
+                              <span class="playlist__song-time media__content">04:56</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
@@ -2120,11 +2119,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          is-outline--red
-                                                                          
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  is-outline--red
+                                                                  
+                                                               ">
                                        3
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2145,16 +2144,18 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Em Là Con Thuyền Cô
-                                       Đơn</span>
+                                    <span class="playlist__song-title info__title">Rồi Em Sẽ Ổn Thôi
+                                       </span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Thái Học</a>
+                                       <a href="#" class="is-ghost">Bảo Uyên</a>,
+
+                                       <a href="#" class="is-ghost">RIN9</a>
 
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">05:04</span>
+                              <span class="playlist__song-time media__content">04:10</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
@@ -2172,11 +2173,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        4
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2184,10 +2185,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/chungduong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/chungduong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2197,12 +2198,12 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Khuê Mộc Lang</span>
+                                    <span class="playlist__song-title info__title">Chung Đường Ngược Hướng</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Hương Ly</a>,
+                                       <a href="#" class="is-ghost">Thiên Ân</a>,
 
-                                       <a href="#" class="is-ghost">Jombie</a>
+                                       <a href="#" class="is-ghost">LQ Media</a>
 
                                     </p>
                                  </div>
@@ -2225,11 +2226,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        5
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2250,20 +2251,18 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Yêu Là Cưới
-                                       (Remix)</span>
+                                    <span class="playlist__song-title info__title">Phận Khách Sang Sông
+                                       </span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Phát Hồ</a>,
+                                       <a href="#" class="is-ghost">Lâm Chấn Hải</a>,
 
-                                       <a href="#" class="is-ghost">DinhLong</a>,
-
-                                       <a href="#" class="is-ghost">X2X</a>
+                                       
 
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">03:50</span>
+                              <span class="playlist__song-time media__content">05:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
@@ -2281,11 +2280,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        6
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2293,10 +2292,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/daubt.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/daubt.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2306,14 +2305,172 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Thay Lòng</span>
+                                    <span class="playlist__song-title info__title">Đâu Biết Trước Chuyện Xa Nhau</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">DIMZ</a>,
+                                       <a href="#" class="is-ghost">Bozitt</a>,
 
-                                       <a href="#" class="is-ghost">TVk</a>,
+                                       <a href="#" class="is-ghost">Reddy</a>,
 
                                        <a href="#" class="is-ghost">NH4T</a>
+
+                                    </p>
+                                 </div>
+                              </div>
+                              <span class="playlist__song-time media__content">04:40</span>
+                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn btn--mic option-btn">
+                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
+                                 </div>
+                                 <div class="playlist__song-btn btn--heart option-btn">
+                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
+                                 </div>
+                                 <div class="playlist__song-btn option-btn">
+                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="playlist__list-song media ">
+                              <div class="playlist__song-info media__left">
+                                 <div class="playlist__song-rank">
+                                    <div class="playlist__rank-number 
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
+                                       7
+                                    </div>
+                                    <div class="playlist__rank-icon">
+                                       <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/anhbuoc.jpg') no-repeat center center / cover">
+                                    <div class="thumb--animate">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/anhbuoc.jpg') no-repeat 50% / contain">
+                                       </div>
+                                    </div>
+                                    <div class="play-song--actions">
+                                       <div class="control-btn btn-toggle-play1">
+                                          <i class="fa-solid fa-play"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-body media__info">
+                                    <span class="playlist__song-title info__title">Anh Bước Ra Từ Manga</span>
+                                    <p class="playlist__song-author info__author">
+
+                                       <a href="#" class="is-ghost">Mr.Siro</a>
+
+                                    </p>
+                                 </div>
+                              </div>
+                              <span class="playlist__song-time media__content">05:26</span>
+                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn btn--mic option-btn">
+                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
+                                 </div>
+                                 <div class="playlist__song-btn btn--heart option-btn">
+                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
+                                 </div>
+                                 <div class="playlist__song-btn option-btn">
+                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="playlist__list-song media ">
+                              <div class="playlist__song-info media__left">
+                                 <div class="playlist__song-rank">
+                                    <div class="playlist__rank-number 
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
+                                       8
+                                    </div>
+                                    <div class="playlist__rank-icon">
+                                       <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/matbao.jpg') no-repeat center center / cover">
+                                    <div class="thumb--animate">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/matbao.jpg') no-repeat 50% / contain">
+                                       </div>
+                                    </div>
+                                    <div class="play-song--actions">
+                                       <div class="control-btn btn-toggle-play1">
+                                          <i class="fa-solid fa-play"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-body media__info">
+                                    <span class="playlist__song-title info__title">Mất Bao Lâu Để Quên Một Người
+                                       </span>
+                                    <p class="playlist__song-author info__author">
+
+                                       <a href="#" class="is-ghost">Quang Trung</a>,
+
+                                       <a href="#" class="is-ghost">Ái Phương</a>
+
+                                    </p>
+                                 </div>
+                              </div>
+                              <span class="playlist__song-time media__content">05:15</span>
+                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn btn--mic option-btn">
+                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
+                                 </div>
+                                 <div class="playlist__song-btn btn--heart option-btn">
+                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
+                                 </div>
+                                 <div class="playlist__song-btn option-btn">
+                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="playlist__list-song media ">
+                              <div class="playlist__song-info media__left">
+                                 <div class="playlist__song-rank">
+                                    <div class="playlist__rank-number 
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
+                                       9
+                                    </div>
+                                    <div class="playlist__rank-icon">
+                                       <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/cangbiet.jpg') no-repeat center center / cover">
+                                    <div class="thumb--animate">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/cangbiet.jpg') no-repeat 50% / contain">
+                                       </div>
+                                    </div>
+                                    <div class="play-song--actions">
+                                       <div class="control-btn btn-toggle-play1">
+                                          <i class="fa-solid fa-play"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-body media__info">
+                                    <span class="playlist__song-title info__title">Càng Biết Càng Đau</span>
+                                    <p class="playlist__song-author info__author">
+
+                                       <a href="#" class="is-ghost">Liz Kim Cương</a>
+
+                                       
 
                                     </p>
                                  </div>
@@ -2336,22 +2493,22 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
-                                       7
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
+                                       10
                                     </div>
                                     <div class="playlist__rank-icon">
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/motngay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/motngay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2361,10 +2518,63 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Rồi Tới Luôn</span>
+                                    <span class="playlist__song-title info__title">Một Ngày Mãi Mãi</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Nal</a>
+                                       <a href="#" class="is-ghost">Trang</a>,
+
+                                       <a href="#" class="is-ghost">Tùng</a>
+
+                                    </p>
+                                 </div>
+                              </div>
+                              <span class="playlist__song-time media__content">03:10</span>
+                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn btn--mic option-btn">
+                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
+                                 </div>
+                                 <div class="playlist__song-btn btn--heart option-btn">
+                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
+                                 </div>
+                                 <div class="playlist__song-btn option-btn">
+                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="playlist__list-song media song--not-expand">
+                              <div class="playlist__song-info media__left">
+                                 <div class="playlist__song-rank">
+                                    <div class="playlist__rank-number 
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
+                                       11
+                                    </div>
+                                    <div class="playlist__rank-icon">
+                                       <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-thumb media__thumb mr-10"
+                                    style="background: url('./assets/img/nhacmoi/luyenluu.jpg') no-repeat center center / cover">
+                                    <div class="thumb--animate">
+                                       <div class="thumb--animate-img"
+                                          style="background: url('./assets/img/nhacmoi/luyenluu.jpg') no-repeat 50% / contain">
+                                       </div>
+                                    </div>
+                                    <div class="play-song--actions">
+                                       <div class="control-btn btn-toggle-play1">
+                                          <i class="fa-solid fa-play"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="playlist__song-body media__info">
+                                    <span class="playlist__song-title info__title">Luyến Lưu</span>
+                                    <p class="playlist__song-author info__author">
+
+                                       <a href="#" class="is-ghost">Phát Hồ</a>
 
                                     </p>
                                  </div>
@@ -2383,230 +2593,15 @@
                               </div>
                            </div>
 
-                           <div class="playlist__list-song media ">
-                              <div class="playlist__song-info media__left">
-                                 <div class="playlist__song-rank">
-                                    <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
-                                       8
-                                    </div>
-                                    <div class="playlist__rank-icon">
-                                       <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
-                                    <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
-                                       </div>
-                                    </div>
-                                    <div class="play-song--actions">
-                                       <div class="control-btn btn-toggle-play1">
-                                          <i class="fa-solid fa-play"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Có Một Tình Yêu Gọi Là
-                                       Chia
-                                       Tay</span>
-                                    <p class="playlist__song-author info__author">
-
-                                       <a href="#" class="is-ghost">Tăng Phúc</a>,
-
-                                       <a href="#" class="is-ghost">Trương Thảo Nhi</a>
-
-                                    </p>
-                                 </div>
-                              </div>
-                              <span class="playlist__song-time media__content">04:18</span>
-                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn btn--mic option-btn">
-                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
-                                 </div>
-                                 <div class="playlist__song-btn btn--heart option-btn">
-                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
-                                 </div>
-                                 <div class="playlist__song-btn option-btn">
-                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="playlist__list-song media ">
-                              <div class="playlist__song-info media__left">
-                                 <div class="playlist__song-rank">
-                                    <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
-                                       9
-                                    </div>
-                                    <div class="playlist__rank-icon">
-                                       <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat center center / cover">
-                                    <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat 50% / contain">
-                                       </div>
-                                    </div>
-                                    <div class="play-song--actions">
-                                       <div class="control-btn btn-toggle-play1">
-                                          <i class="fa-solid fa-play"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Cưới Luôn Được
-                                       Không?</span>
-                                    <p class="playlist__song-author info__author">
-
-                                       <a href="#" class="is-ghost">YuniBoo</a>,
-
-                                       <a href="#" class="is-ghost">Goctoi Mixer</a>
-
-                                    </p>
-                                 </div>
-                              </div>
-                              <span class="playlist__song-time media__content">04:02</span>
-                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn btn--mic option-btn">
-                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
-                                 </div>
-                                 <div class="playlist__song-btn btn--heart option-btn">
-                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
-                                 </div>
-                                 <div class="playlist__song-btn option-btn">
-                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="playlist__list-song media ">
-                              <div class="playlist__song-info media__left">
-                                 <div class="playlist__song-rank">
-                                    <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
-                                       10
-                                    </div>
-                                    <div class="playlist__rank-icon">
-                                       <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat center center / cover">
-                                    <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat 50% / contain">
-                                       </div>
-                                    </div>
-                                    <div class="play-song--actions">
-                                       <div class="control-btn btn-toggle-play1">
-                                          <i class="fa-solid fa-play"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Bao Lâu Ta Lại Yêu Một
-                                       Người</span>
-                                    <p class="playlist__song-author info__author">
-
-                                       <a href="#" class="is-ghost">Doãn Hiếu</a>,
-
-                                       <a href="#" class="is-ghost">B.</a>
-
-                                    </p>
-                                 </div>
-                              </div>
-                              <span class="playlist__song-time media__content">03:51</span>
-                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn btn--mic option-btn">
-                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
-                                 </div>
-                                 <div class="playlist__song-btn btn--heart option-btn">
-                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
-                                 </div>
-                                 <div class="playlist__song-btn option-btn">
-                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
-                                 </div>
-                              </div>
-                           </div>
-
                            <div class="playlist__list-song media song--not-expand">
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
-                                       11
-                                    </div>
-                                    <div class="playlist__rank-icon">
-                                       <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat center center / cover">
-                                    <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat 50% / contain">
-                                       </div>
-                                    </div>
-                                    <div class="play-song--actions">
-                                       <div class="control-btn btn-toggle-play1">
-                                          <i class="fa-solid fa-play"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Thương Nhau Tới
-                                       Bến</span>
-                                    <p class="playlist__song-author info__author">
-
-                                       <a href="#" class="is-ghost">Nal</a>
-
-                                    </p>
-                                 </div>
-                              </div>
-                              <span class="playlist__song-time media__content">04:55</span>
-                              <div class="playlist__song-option song--tab media__right hide-on-mobile">
-                                 <div class="playlist__song-btn btn--mic option-btn">
-                                    <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
-                                 </div>
-                                 <div class="playlist__song-btn btn--heart option-btn">
-                                    <i class="btn--icon song__icon icon--heart fa-solid fa-heart"></i>
-                                 </div>
-                                 <div class="playlist__song-btn option-btn">
-                                    <i class="btn--icon fa-solid fa-ellipsis"></i>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="playlist__list-song media song--not-expand">
-                              <div class="playlist__song-info media__left">
-                                 <div class="playlist__song-rank">
-                                    <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        12
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2627,18 +2622,17 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Đông Phai Mờ Dáng
-                                       Ai</span>
+                                    <span class="playlist__song-title info__title">Chưa Đủ Để Giữ Em</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">DatKaa</a>,
+                                       <a href="#" class="is-ghost">Vương Anh Tú</a>
 
-                                       <a href="#" class="is-ghost">QT Beatz</a>
+                                       
 
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">04:40</span>
+                              <span class="playlist__song-time media__content">05:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
@@ -2656,11 +2650,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        13
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2710,11 +2704,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        14
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2763,11 +2757,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        15
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2814,11 +2808,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        16
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2865,11 +2859,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        17
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2917,11 +2911,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        18
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -2971,11 +2965,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        19
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3024,11 +3018,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        20
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3075,11 +3069,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        21
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3127,11 +3121,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        22
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3184,11 +3178,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        23
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3235,11 +3229,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        24
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3288,11 +3282,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        25
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3339,11 +3333,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        26
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3390,11 +3384,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        27
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3442,11 +3436,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        28
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3495,11 +3489,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        29
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3547,11 +3541,11 @@
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
-                                                                          
-                                                                          
-                                                                          
-                                                                          is-outline--text
-                                                                      ">
+                                                                  
+                                                                  
+                                                                  
+                                                                  is-outline--text
+                                                               ">
                                        30
                                     </div>
                                     <div class="playlist__rank-icon">
@@ -3559,7 +3553,7 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/emhua.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
                                           style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
@@ -3604,7 +3598,7 @@
                   <button class="button charts__expand-btn">Xem top 100</button>
                </div>
             </div>
-         </div>
+         </div>      
       </div>
       <!-- End trang nhạc mới -->
 
@@ -3944,6 +3938,10 @@
                               <a href="#">Keyo</a>...
                            </div>
                         </div>
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form">Edit</button>                         
+                        </div>
+                        
                      </div>
                      <div class="card-item">
                         <a href="#">
