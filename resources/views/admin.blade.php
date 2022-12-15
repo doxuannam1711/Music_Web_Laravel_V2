@@ -3916,29 +3916,8 @@
 
                   <div class="card-wrapper">
 
+                     
                      <div class="card-item">
-                        <a href="#">
-                           <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
-                                 alt="">
-                              <div class="show-effect">
-                                 <i class="fa-regular fa-heart"></i>
-                                 <i class="fas fa-play"></i>
-                                 <i class="fas fa-ellipsis-h"></i>
-                              </div>
-                           </div>
-                        </a>
-                        <div class="card-info">
-                           <div class="card-name">
-                              <a href="#">Top 100 Bài Nhạc Trẻ Hay...</a>
-                           </div>
-                           <div class="card-artists">
-                              <a href="#">MONO</a>,
-                              <a href="#">Vương Anh Tú</a>,
-                              <a href="#">Keyo</a>...
-                           </div>
-                        </div>
-
                         <div class="container-btn-top100-edit-Form">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
@@ -3974,8 +3953,66 @@
                            </div>
                         </div>
                         <!-- End: Open login form -->
+                        <a href="#">
+                           <div class="card-image">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
+                                 alt="">
+                              <div class="show-effect">
+                                 <i class="fa-regular fa-heart"></i>
+                                 <i class="fas fa-play"></i>
+                                 <i class="fas fa-ellipsis-h"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="card-info">
+                           <div class="card-name">
+                              <a href="#">Top 100 Bài Nhạc Trẻ Hay...</a>
+                           </div>
+                           <div class="card-artists">
+                              <a href="#">MONO</a>,
+                              <a href="#">Vương Anh Tú</a>,
+                              <a href="#">Keyo</a>...
+                           </div>
+                        </div>
+
+                        
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
@@ -3999,8 +4036,44 @@
                            </div>
 
                         </div>
+                        
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
@@ -4026,6 +4099,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_edm.png" alt="">
@@ -4050,6 +4158,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
@@ -4088,6 +4231,41 @@
 
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4111,6 +4289,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4136,6 +4349,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4161,6 +4409,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4186,6 +4469,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4212,6 +4530,41 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4235,6 +4588,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4260,6 +4648,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4285,6 +4708,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4310,6 +4768,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4336,6 +4829,41 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
@@ -4359,6 +4887,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4384,6 +4947,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4409,6 +5007,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
@@ -4444,6 +5077,41 @@
                   <div class="card-wrapper">
 
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4467,6 +5135,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4492,6 +5195,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4517,6 +5255,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4542,6 +5315,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
@@ -4576,6 +5384,41 @@
 
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4599,6 +5442,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4624,6 +5502,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4649,6 +5562,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4674,6 +5622,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4700,6 +5683,41 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4723,6 +5741,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4748,6 +5801,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4773,6 +5861,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_edm.png" alt="">
@@ -4797,6 +5920,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4823,6 +5981,41 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4846,6 +6039,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4871,6 +6099,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
@@ -4904,6 +6167,41 @@
                   <div class="card-wrapper">
 
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4927,6 +6225,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4952,6 +6285,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -4977,6 +6345,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -5002,6 +6405,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -5027,6 +6465,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -5052,6 +6525,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
@@ -5077,6 +6585,41 @@
                         </div>
                      </div>
                      <div class="card-item">
+                        <div class="container-btn-top100-edit-Form">
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
+                        </div>
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
                               <img style="width: 100%; height: 100%;"
