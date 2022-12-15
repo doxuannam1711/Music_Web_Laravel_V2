@@ -74,11 +74,38 @@
    <link rel="stylesheet" href="{{url('/assets/css/zingchart.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/normalize.min.css')}}">
    <link rel="stylesheet" href="{{url('/assets/css/grid.css')}}">
+   <!-- <link rel="stylesheet" href="{{url('/assets/css/admin_style/edit.css')}}"> -->
    <title>Music Player Laravel</title>
 </head>
 
 <body style="user-select: none;">
-   
+
+
+   <!-- form Edit -->
+
+
+   <div class="app_edit" style="display: none;">
+      <div class="edit-container">
+            <div class="mb-3">
+               <label for="">Title</label>
+               <input type="text" class="form-control chart__text-title" name="name" placeholder="name" value="">
+            </div>
+            <div class="mb-3">
+               <label for="">Singer</label>
+               <input type="text" class="form-control chart__text-singer" name="singer" placeholder="singer" value="">
+            </div>
+            <div class="mb-3">
+               <label for="">Image</label>
+               <input type="file" class="form-control chart__file-image">
+            </div>
+            <button type="submit" class="btn btn-primary btn-close-update">Update</button>
+            <a class="btn btn-primary btn-close-edit">Close</a>
+      </div>
+
+   </div>
+
+
+
    <!-- Begin: Open login form -->
    <div class="form-login js-login">
       <div class="login-container js-login-container">
@@ -156,8 +183,7 @@
    <div class="grid-1">
       <div class="sidebar">
          <div class="logo-brand pl-35">
-            <img onclick="changeTo_tabCaNhan()" src="{{url('assets/img/assets-khampha/logo.png')}}" width="100"
-               height="100%" alt="logo brand">
+            <img onclick="changeTo_tabCaNhan()" src="{{url('assets/img/assets-khampha/logo.png')}}" width="100" height="100%" alt="logo brand">
          </div>
          <!-- menu 1 -->
          <div class="nav-menu-1">
@@ -196,7 +222,7 @@
             </a>
          </div>
       </div>
-      
+
       <!-- Begin: Button Login and Sign Up -->
       <!-- <div id="login_and_signup">
          <div class="login-text">Đăng nhập để khám phá playlist dành riêng cho bạn</div>
@@ -211,7 +237,7 @@
    </div>
    <!-- Grid 1: End chứa menu sidebar bên trái -->
 
-<!-- Start grid 2: -->
+   <!-- Start grid 2: -->
    <div class="grid-2">
 
       <!-- Start header chứa thanh tìm kiếm -->
@@ -384,7 +410,9 @@
       <!-- Start trang zing chart -->
       <div id="tabChart">
          <div class="charts__container">
+
             <div class="grid">
+
                <div class="chart__container-header mb-40">
                   <h3 class="chart__header-name">#Music chart</h3>
                   <div class="chart__header-btn">
@@ -395,7 +423,6 @@
                   <div class=" col l-12 m-12 c-12">
                      <div class="container__playlist">
                         <div class="playlist__list-charts overflow-visible">
-
                            <div class="playlist__list-song media ">
                               <div class="playlist__song-info media__left">
                                  <div class="playlist__song-rank">
@@ -411,11 +438,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -436,6 +461,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:11</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="1">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -463,11 +491,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -491,6 +517,9 @@
                               </div>
                               <span class="playlist__song-time media__content">02:59</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="2">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -508,8 +537,8 @@
                                  <div class="playlist__song-rank">
                                     <div class="playlist__rank-number 
                                                                           
-                                                                          
                                                                           is-outline--red
+                                                                          
                                                                           
                                                                       ">
                                        3
@@ -518,11 +547,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -532,17 +559,23 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-body media__info">
-                                    <span class="playlist__song-title info__title">Em Là Con Thuyền Cô
-                                       Đơn</span>
+                                    <span class="playlist__song-title info__title">Em là con thuyền cô đơn</span>
                                     <p class="playlist__song-author info__author">
 
-                                       <a href="#" class="is-ghost">Thái Học</a>
+                                       <a href="#" class="is-ghost">Tery Trần</a>,
+
+                                       <a href="#" class="is-ghost">X2X</a>,
+
+                                       <a href="#" class="is-ghost"></a>
 
                                     </p>
                                  </div>
                               </div>
-                              <span class="playlist__song-time media__content">05:04</span>
+                              <span class="playlist__song-time media__content">04:59</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="3">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -570,11 +603,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -596,6 +627,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:26</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="4">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -623,11 +657,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -652,6 +684,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:50</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="5">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -679,11 +714,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -707,6 +740,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="6">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -734,11 +770,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -758,6 +792,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:07</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="7">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -785,11 +822,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -813,6 +848,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:18</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="8">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -840,11 +878,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -867,6 +903,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:02</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="9">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -894,11 +933,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song10.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song10.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -921,6 +958,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="10">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -948,11 +988,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song11.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -973,6 +1011,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:55</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="11">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1000,11 +1041,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song12.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1027,6 +1066,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:40</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="12">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1054,11 +1096,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song13.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song13.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1081,6 +1121,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:12</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="13">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1108,11 +1151,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song14.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song14.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1134,6 +1175,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:05</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="14">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1161,11 +1205,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song15.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song15.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1185,6 +1227,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="15">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1212,11 +1257,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song16.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song16.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1236,6 +1279,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:15</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="16">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1263,11 +1309,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song17.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song17.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1288,6 +1332,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="17">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1315,11 +1362,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song18.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song18.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1342,6 +1387,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:35</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="18">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1369,11 +1417,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song19.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song19.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1395,6 +1441,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="19">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1422,11 +1471,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song20.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song20.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1446,6 +1493,9 @@
                               </div>
                               <span class="playlist__song-time media__content">02:48</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="20">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1473,11 +1523,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song21.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song21.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1498,6 +1546,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="21">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1525,11 +1576,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song22.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song22.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1555,6 +1604,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="22">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1582,11 +1634,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song23.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song23.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1606,6 +1656,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:20</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="23">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1633,11 +1686,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song24.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song24.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1659,6 +1710,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:31</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="24">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1686,11 +1740,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song25.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song25.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1710,6 +1762,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="25">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1737,11 +1792,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song26.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song26.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1761,6 +1814,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:42</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="26">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1788,11 +1844,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song27.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song27.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1813,6 +1867,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:38</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="27">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1840,11 +1897,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song28.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song28.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1866,6 +1921,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="28">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1893,11 +1951,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song29.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song29.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1918,6 +1974,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:55</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="29">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -1945,11 +2004,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -1971,6 +2028,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn" value="30">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2028,10 +2088,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/dunglo.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/dunglo.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/phuongly.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2051,6 +2111,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:41</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2079,10 +2142,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/honem.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/honem.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/yeulacuoi.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2103,6 +2166,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:56</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2130,11 +2196,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/emlaconthuyen.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2157,6 +2221,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:10</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2185,10 +2252,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/chungduong.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/chungduong.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/khuemoclong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2210,6 +2277,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:26</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2237,11 +2307,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/Zingchart/yeulacuoiremix.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2264,6 +2332,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2292,10 +2363,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/daubt.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/daubt.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/thaylong.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2319,6 +2390,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:40</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2347,10 +2421,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/anhbuoc.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/anhbuoc.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/roitoiluon.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2370,6 +2444,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:26</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2398,10 +2475,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/matbao.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/matbao.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/Zingchart/tinhyeugoilachiatay.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2424,6 +2501,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:15</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2452,10 +2532,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/cangbiet.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/cangbiet.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/yuniboo.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2477,6 +2557,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2505,10 +2588,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/motngay.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/motngay.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/baolau.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2530,6 +2613,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:10</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2558,10 +2644,10 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/luyenluu.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
                                        <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/luyenluu.jpg') no-repeat 50% / contain">
+                                          style="background: url('./assets/img/nhacmoi/thuongnhau.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2581,6 +2667,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:07</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2608,11 +2697,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/dongphai.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2634,6 +2721,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:36</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2661,11 +2751,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/nhacmoi/nhanrang.jpg') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2688,6 +2776,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:12</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2715,11 +2806,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/diudang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/diudang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2741,6 +2830,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:05</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2768,11 +2860,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/emhat.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/emhat.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2792,6 +2882,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2819,11 +2912,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/vayla.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/vayla.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2843,6 +2934,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:15</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2870,11 +2964,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/vanganh.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/vanganh.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2895,6 +2987,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:39</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2922,11 +3017,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/neuluctruoc.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/neuluctruoc.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -2949,6 +3042,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:35</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -2976,11 +3072,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/codon.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/codon.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3002,6 +3096,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3029,11 +3126,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/money.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/money.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3053,6 +3148,9 @@
                               </div>
                               <span class="playlist__song-time media__content">02:48</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3080,11 +3178,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/yeuma.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/yeuma.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3105,6 +3201,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3132,11 +3231,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/dotoc.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/dotoc.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3162,6 +3259,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3189,11 +3289,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/chieudongque.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/chieudongque.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3213,6 +3311,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:20</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3240,11 +3341,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/tupleuvang.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/tupleuvang.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3266,6 +3365,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:31</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3293,11 +3395,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/lalisa.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/lalisa.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3317,6 +3417,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:21</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3344,11 +3447,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/saicachyeu.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/saicachyeu.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3368,6 +3469,9 @@
                               </div>
                               <span class="playlist__song-time media__content">05:42</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3395,11 +3499,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/cohen.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/cohen.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3420,6 +3522,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:38</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3447,11 +3552,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/emnaocotoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/emnaocotoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3473,6 +3576,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:51</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3500,11 +3606,9 @@
                                        <i class="fa-solid fa-minus"></i>
                                     </div>
                                  </div>
-                                 <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/nhantoi.jpg') no-repeat center center / cover">
+                                 <div class="playlist__song-thumb media__thumb mr-10" style="background: url('./assets/img/nhacmoi/nhantoi.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3525,6 +3629,9 @@
                               </div>
                               <span class="playlist__song-time media__content">03:55</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3553,10 +3660,9 @@
                                     </div>
                                  </div>
                                  <div class="playlist__song-thumb media__thumb mr-10"
-                                    style="background: url('./assets/img/nhacmoi/emhua.jpg') no-repeat center center / cover">
+                                    style="background: url('./assets/img/tabCharts/chartSongRanks/song30.jpg') no-repeat center center / cover">
                                     <div class="thumb--animate">
-                                       <div class="thumb--animate-img"
-                                          style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
+                                       <div class="thumb--animate-img" style="background: url('./assets/img/SongActiveAnimation/icon-playing.gif') no-repeat 50% / contain">
                                        </div>
                                     </div>
                                     <div class="play-song--actions">
@@ -3578,6 +3684,9 @@
                               </div>
                               <span class="playlist__song-time media__content">04:25</span>
                               <div class="playlist__song-option song--tab media__right hide-on-mobile">
+                                 <div class="playlist__song-btn">
+                                    <button class="btn btn-warning chart__btn-edit">Edit</button>
+                                 </div>
                                  <div class="playlist__song-btn btn--mic option-btn">
                                     <i class="btn--icon song__icon icon__mic--edit fa-solid fa-microphone"></i>
                                  </div>
@@ -3613,8 +3722,7 @@
             <div class="playlist--hot-hit white">
                <div class="playlist--carousel">
                   <div class="pl-element">
-                     <div class="element--rec"
-                        style="background-image: url('./assets/img/assets-the_loai/nhacviet.bmp');">
+                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhacviet.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3626,8 +3734,7 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec"
-                        style="background-image: url('./assets/img/assets-the_loai/nhachan.bmp');">
+                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhachan.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3639,8 +3746,7 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec"
-                        style="background-image: url('./assets/img/assets-the_loai/nhachoa.bmp');">
+                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhachoa.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart fa-icon"></i>
@@ -3652,8 +3758,7 @@
                      </div>
                   </div>
                   <div class="pl-element">
-                     <div class="element--rec"
-                        style="background-image: url('./assets/img/assets-the_loai/nhacaumi.bmp');">
+                     <div class="element--rec" style="background-image: url('./assets/img/assets-the_loai/nhacaumi.bmp');">
                         <div class="element--rec-cover">
                            <div class=" icon-play-200">
                               <i class="fa-regular fa-heart"></i>
@@ -3955,8 +4060,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4015,8 +4119,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4076,8 +4179,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4195,8 +4297,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4268,8 +4369,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4326,8 +4426,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4386,8 +4485,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4446,8 +4544,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4506,8 +4603,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4567,8 +4663,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4625,8 +4720,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4685,8 +4779,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4745,8 +4838,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4805,8 +4897,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4866,8 +4957,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4924,8 +5014,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4984,8 +5073,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5044,8 +5132,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5114,8 +5201,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5172,8 +5258,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5232,8 +5317,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5292,8 +5376,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5352,8 +5435,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5421,8 +5503,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5479,8 +5560,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5539,8 +5619,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5599,8 +5678,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5659,8 +5737,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5720,8 +5797,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5778,8 +5854,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5838,8 +5913,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5957,8 +6031,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6018,8 +6091,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6076,8 +6148,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6136,8 +6207,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
-                                 alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6204,8 +6274,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6262,8 +6331,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6322,8 +6390,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6382,8 +6449,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6442,8 +6508,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6502,8 +6567,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6562,8 +6626,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6622,8 +6685,7 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;"
-                                 src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6720,8 +6782,8 @@
 
    <script src="{{url('/assets/js/admin.js')}}"></script>
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
-   <script src="{{url('assets/js/top100_openEditForm.js')}}"></script>
-   
+   <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
+   <script src="{{url('/assets/js/chart.js')}}"></script>
 
 </body>
 
