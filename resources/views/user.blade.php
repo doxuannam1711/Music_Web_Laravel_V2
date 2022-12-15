@@ -10,6 +10,8 @@
 
    <link rel="stylesheet" href="{{url('/assets/css/khampha.css')}}">
 
+   <link rel="stylesheet" href="{{url('/assets/css/khampha2.css')}}">
+
    <link rel="stylesheet" href="{{url('/assets/css/ca_nhan.css')}}">
 
    <link rel="stylesheet" href="{{url('/assets/css/the_loai.css')}}">
@@ -262,7 +264,7 @@
                <img class="slide-component" src="./assets/img/assets-khampha/slide3.jpg" alt="">
             </div>
          </div>
-
+         
          <!-- section 02: Hot hit -->
          <div class="playlist--hot-hit white">
             <div class="playlist--title">
@@ -270,10 +272,11 @@
             </div>
             <div class="playlist--carousel">
                <div class="pl-element">
-                  <div class="element--head">
+                  <div class="element--head absolute">
+                     <i class="fas fa-play absolute z98 cover-play-btn"></i>
                      <img src="./assets/img/assets-khampha/hothit1.webp" alt="">
-                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
                      <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -284,7 +287,7 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit2.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -294,8 +297,8 @@
                <div class="pl-element">
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit3.webp" alt="">
-                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+                     <i class="fas fa-play absolute z98 cover-play-btn"></i>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -306,7 +309,7 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit4.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -317,13 +320,251 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit5.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
                      <p>Những ca khúc buồn hay nhất của Vũ huhuhu:(</p>
                   </div>
                </div>
+            </div>
+         </div>
+         
+         <!-- Section 03: Hay nhat cua nam 2022 -->
+         <div class="playlist--hot-2022 white">
+            <div class="playlist--title">
+               <h2>Hay nhất của năm 2022</h2>
+            </div>
+            <div class="playlist--carousel">
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot2.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những nghệ sĩ nổi bật năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot3.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc VPOP nổi bật nhất 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot4.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc KPOP nổi bật nhất 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot5.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc USUK nổi bật nhất 2022</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- section 04: playlist giang sinh -->
+         <div class="playlist--hot-2022 white">
+            <div class="playlist--title">
+               <h2>Giáng sinh sắp tới rồi nè</h2>
+            </div>
+            <div class="playlist--carousel">
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Những bản nhạc Giáng Sinh bất hủ</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas2.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Giáng sinh rộn ràng cùng cả nhà</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas3.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Nhạc POP Giáng sinh USUK</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas4.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Bản tình ca mùa đông ấm lòng</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas5.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Noel tình yêu không dành cho người cô đơn</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="music--new white">
+            <div class="playlist--title">
+               <h2>Nhạc mới về làng</h2>
+            </div>
+            <div class="music--carousel">
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+         
+         
+         
             </div>
          </div>
       </div>

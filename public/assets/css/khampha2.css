@@ -13,6 +13,7 @@
   --primary-color: #050716;
   --secondary-color: #191f51;
   --icon-size: 58px;
+     --scale-hover: 1.0;
   --white: white;
 }
 
@@ -46,6 +47,10 @@ a {
 
 .relative {
   position: relative;
+}
+
+.absolute{
+  position: absolute;
 }
 
 /* style header */
@@ -98,32 +103,42 @@ a {
   border-top: 0.5px solid rgba(148, 148, 148, 0.212);
   margin: 20px 35px;
 }
-.absolute{
+
+.pl-element .func--play {
+  display: none;
   position: absolute;
+  font-size: var(--icon-size);
+  top: calc(50% - (var(--icon-size) / 2));
+  left: calc(50% - (var(--icon-size) / 2));
+  z-index: 1000;
 }
 
 /* grid 2 */
 
 .grid-2 {
-  max-width: calc(100% - 280px);
+  max-width: calc(100% - 240px);
   box-sizing: border-box;
   max-height: fit-content;
   position: relative;
-  left: 280px;
+  padding-left:20px;
+  left: 240px;
   margin-bottom: 50px;
 }
 
 .header-top {
-  z-index: 99999999;
+  z-index: 9999;
+
   position: sticky;
+  padding-left:20px;
+  padding-right:20px;
   top: 0;
+  left:0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding-right: 40px;
+  padding-right: 30px;
   height: 70px;
   align-items: center;
-  /* background-color: var(--background); */
+  background-color: var(--background);
 }
 
 .search-bar {
@@ -202,14 +217,14 @@ span.search-icon {
   margin: 5px;
 }
 
-/* section 2: playlist 1 */
+/* playlists */
 
 .playlist--hot-hit {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 50px 0;
 }
+
 
 .playlist--title {
   font-size: 100%;
@@ -227,7 +242,7 @@ span.search-icon {
 }
 
 .element--title p {
-  font-size: 12px;
+  font-size: 14px;
   color: #a19ac3;
 }
 
@@ -285,3 +300,63 @@ span.search-icon {
   left: calc(50% - (var(--icon-size) / 2));
   z-index: 1000;
 }
+
+.element--head-cover:hover .overlay {
+  display: block !important;
+}
+
+/* nhac */
+  /* hover */
+  .element--head-cover:hover .cover-play-btn{
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .element--rec-cover:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .element--rec-cover:not(hover) {
+    opacity: 0;
+    transition: 1s;
+  }
+
+.music--carousel{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap:4;
+}
+
+.music--carousel .pl-element {
+  padding:15px;
+  width:90%;
+  border-radius:10px;
+  display:flex;
+  background-color: var(--primary-color);
+  gap:16px;
+}
+
+.music--carousel .pl-element .element--head{
+  width:30%;
+}
+
+.music--carousel .pl-element .element--title{
+  flex-direction: column;
+  width:100%;
+  justify-content: space-between;
+}
+
+.element--title .func i{
+  font-size:48px;
+  opacity: 0.8;
+  float:right;
+}
+
+
+
+
+
+
+

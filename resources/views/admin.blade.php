@@ -59,6 +59,8 @@
 
    <link rel="stylesheet" href="{{url('/assets/css/khampha.css')}}">
 
+   <link rel="stylesheet" href="{{url('/assets/css/khampha2.css')}}">
+
    <link rel="stylesheet" href="{{url('/assets/css/ca_nhan.css')}}">
 
    <link rel="stylesheet" href="{{url('/assets/css/the_loai.css')}}">
@@ -68,6 +70,9 @@
    <link rel="stylesheet" href="{{url('/assets/css/login_form.css')}}">
 
    <link rel="stylesheet" href="{{url('/assets/css/top100_editForm.css')}}">
+
+   <link rel="stylesheet" href="{{url('/assets/css/chart_editForm.css')}}">
+
 
 
    <link rel="stylesheet" href="{{url('/assets/css/base.css')}}">
@@ -339,7 +344,7 @@
                <img class="slide-component" src="./assets/img/assets-khampha/slide3.jpg" alt="">
             </div>
          </div>
-
+         
          <!-- section 02: Hot hit -->
          <div class="playlist--hot-hit white">
             <div class="playlist--title">
@@ -347,10 +352,11 @@
             </div>
             <div class="playlist--carousel">
                <div class="pl-element">
-                  <div class="element--head">
+                  <div class="element--head absolute">
+                     <i class="fas fa-play absolute z98 cover-play-btn"></i>
                      <img src="./assets/img/assets-khampha/hothit1.webp" alt="">
-                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
                      <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -361,7 +367,7 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit2.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -371,8 +377,8 @@
                <div class="pl-element">
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit3.webp" alt="">
-                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+                     <i class="fas fa-play absolute z98 cover-play-btn"></i>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -383,7 +389,7 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit4.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
@@ -394,13 +400,251 @@
                   <div class="element--head">
                      <img src="./assets/img/assets-khampha/hothit5.webp" alt="">
                      <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
-                     <div class="overlay"></div>
+         
                   </div>
                   <div class="element--title">
                      <h3>Nhạc của Vũ</h3>
                      <p>Những ca khúc buồn hay nhất của Vũ huhuhu:(</p>
                   </div>
                </div>
+            </div>
+         </div>
+         
+         <!-- Section 03: Hay nhat cua nam 2022 -->
+         <div class="playlist--hot-2022 white">
+            <div class="playlist--title">
+               <h2>Hay nhất của năm 2022</h2>
+            </div>
+            <div class="playlist--carousel">
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot2.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những nghệ sĩ nổi bật năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot3.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc VPOP nổi bật nhất 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot4.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc KPOP nổi bật nhất 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/hot5.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <p>Những ca khúc USUK nổi bật nhất 2022</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- section 04: playlist giang sinh -->
+         <div class="playlist--hot-2022 white">
+            <div class="playlist--title">
+               <h2>Giáng sinh sắp tới rồi nè</h2>
+            </div>
+            <div class="playlist--carousel">
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Những bản nhạc Giáng Sinh bất hủ</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas2.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Giáng sinh rộn ràng cùng cả nhà</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas3.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Nhạc POP Giáng sinh USUK</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas4.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Bản tình ca mùa đông ấm lòng</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/xmas5.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title">
+                     <h3>Noel tình yêu không dành cho người cô đơn</h3>
+                     <p>Những ca khúc giáng sinh hay nhất năm 2022</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="music--new white">
+            <div class="playlist--title">
+               <h2>Nhạc mới về làng</h2>
+            </div>
+            <div class="music--carousel">
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+         
+               <div class="pl-element">
+                  <div class="element--head">
+                     <img src="./assets/img/assets-khampha/baihat1.webp" alt="">
+                     <div class="func--play"><i class="fa-regular fa-circle-play"></i></div>
+         
+                  </div>
+                  <div class="element--title flex">
+                     <div class="title">
+                        <h3>Anh nhớ ra rằng</h3>
+                        <p>Vũ hay ho</p>
+                     </div>
+                     <div class="func">
+                        <i class="fa-regular fa-circle-play"></i>
+                     </div>
+                  </div>
+               </div>
+         
+         
+         
+         
             </div>
          </div>
       </div>
@@ -4060,7 +4304,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4120,7 +4365,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4181,7 +4427,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4299,7 +4546,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4372,7 +4620,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_edmViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4430,7 +4679,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top_100Vpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4490,7 +4740,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacPhimVietNam.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4550,7 +4801,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacTrinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4610,7 +4862,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_caiLuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4671,7 +4924,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacKhongLoi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4729,7 +4983,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacThieuNhi.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4789,7 +5044,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacQueHuong.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4849,7 +5105,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacCachMang.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4909,7 +5166,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacDanceViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -4970,7 +5228,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_rapVietNam.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5028,7 +5287,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacRockViet.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5088,7 +5348,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacVietNam/top100_nhacTruTinh.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5148,7 +5409,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacTre.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5218,7 +5480,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5276,7 +5539,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacPhimHanQuoc.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5336,7 +5600,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacHoaNgu.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5396,7 +5661,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacChauA/top100_nhacJpop.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5456,7 +5722,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacHanQuoc.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5525,7 +5792,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacAudiophile.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5583,7 +5851,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacFolk.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5643,7 +5912,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacBlueJazz.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5703,7 +5973,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacTrance_house_techno.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5763,7 +6034,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacIndie.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5824,7 +6096,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacChristian&Gospel.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5882,7 +6155,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacPhimAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -5942,7 +6216,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacR&B.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6062,7 +6337,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacCountry.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6123,7 +6399,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacRapAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6181,7 +6458,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacAuMy/top100_nhacRockAuMy.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6241,7 +6519,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png" alt="">
+                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/top100_nhacAuMy.png"
+                                 alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6309,7 +6588,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCuKhac.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6367,7 +6647,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacNewAge&WorldMusic.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6427,7 +6708,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacSaxophone.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6487,7 +6769,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacCello.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6547,7 +6830,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacViolin.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6607,7 +6891,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacGuitar.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6667,7 +6952,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_nhacPiano.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
@@ -6727,7 +7013,8 @@
                         <!-- End: Open login form -->
                         <a href="#">
                            <div class="card-image">
-                              <img style="width: 100%; height: 100%;" src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
+                              <img style="width: 100%; height: 100%;"
+                                 src="./assets/img/top100/nhacHoaTau/top100_HoaTauCoDien.png" alt="">
                               <div class="show-effect">
                                  <i class="fa-regular fa-heart"></i>
                                  <i class="fas fa-play"></i>
