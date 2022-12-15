@@ -25,3 +25,96 @@
 .btn-top100-edit-Form:hover{
    opacity:0.8;
 }
+
+/* Top 100 edit form */
+
+.form-top100-edit.open {
+  display: flex;
+}
+.form-top100-edit {
+  z-index: 99999999999999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.top100-edit-container {
+  background-color: #fff;
+  width: 600px;
+  max-width: calc(100% - 32px);
+  min-height: 472px;
+  font-size: 15px;
+  position: relative;
+  animation: loginAnimation ease 0.4s;
+}
+.top100-edit-close-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.top100-edit-close-btn {
+  position: absolute;
+  right: 0;
+  width: 46px;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  color: #fff;
+  font-size: 17px;
+}
+.top100-edit-header {
+  background-color: var(--secondary-color);
+  height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.top100-edit-body {
+  padding: 16px;
+}
+.top100-edit-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.top100-edit-input {
+  width: 100%;
+  padding: 10.75px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 24px;
+}
+#top100-edit-btnSave {
+   background-color: var(--secondary-color);
+   height: 54.5px;
+   width: 100%;
+   border: none;
+   text-transform: uppercase;
+   color: #fff;
+   margin-top: 16px;
+   margin-bottom: 16px;
+   font-size: 15px;
+}
+#top100-edit-btnSave:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@keyframes loginAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

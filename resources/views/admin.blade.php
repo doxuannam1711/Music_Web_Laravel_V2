@@ -3938,10 +3938,42 @@
                               <a href="#">Keyo</a>...
                            </div>
                         </div>
+
                         <div class="container-btn-top100-edit-Form">
-                           <button class="btn-top100-edit-Form">Edit</button>                         
+                           <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
-                        
+                        <!-- Begin: Open login edit -->
+                        <div class="form-top100-edit js-top100-edit">
+                           <div class="top100-edit-container js-login-container">
+                              <div class="top100-edit-close-btn js-top100-edit-close-btn">
+                                 <i class="fa-solid fa-xmark"></i>
+                              </div>
+
+                              <header class="top100-edit-header">
+                                 Edit Form
+                              </header>
+
+                              <div class="top100-edit-body">
+                                 <label class="top100-edit-label">
+                                    Tiêu đề của Top 100
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label class="top100-edit-label">
+                                    Các nghệ sĩ
+                                 </label>
+                                 <input type="text" class="top100-edit-input" required>
+
+                                 <label for="">Image</label>
+                                 <input type="file" class="form-control" name="image" placeholder="name">
+
+                                 <button type="submit" id="top100-edit-btnSave">
+                                    Save <i class="fa-solid fa-check"></i>
+                                 </button>
+                              </div>                             
+                           </div>
+                        </div>
+                        <!-- End: Open login form -->
                      </div>
                      <div class="card-item">
                         <a href="#">
@@ -5145,7 +5177,8 @@
 
    <script src="{{url('/assets/js/admin.js')}}"></script>
    <script src="{{url('/assets/js/change_tab.js')}}"></script>
-   <script src="{{url('assets/js/openFormLoginAndSignUp.js')}}"></script>
+   <script src="{{url('assets/js/top100_openEditForm.js')}}"></script>
+   
 
 </body>
 
