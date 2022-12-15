@@ -4023,7 +4023,7 @@
 
                      
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="1" >
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4041,15 +4041,15 @@
                                  <label class="top100-edit-label">
                                     Tiêu đề của Top 100
                                  </label>
-                                 <input type="text" class="top100-edit-input" required>
+                                 <input type="text" class="top100-edit-input top100-edit-input-title" required>
 
                                  <label class="top100-edit-label">
                                     Các nghệ sĩ
                                  </label>
-                                 <input type="text" class="top100-edit-input" required>
+                                 <input type="text" class="top100-edit-input top100-edit-input-singers" required>
 
                                  <label for="">Image</label>
-                                 <input type="file" class="form-control" name="image" placeholder="name">
+                                 <input type="file" class="form-control top100-edit-input-image" name="image" placeholder="name">
 
                                  <button type="submit" id="top100-edit-btnSave">
                                     Save <i class="fa-solid fa-check"></i>
@@ -4070,9 +4070,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Bài Nhạc Trẻ Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Bài Nhạc Trẻ Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">MONO</a>,
                               <a href="#">Vương Anh Tú</a>,
                               <a href="#">Keyo</a>...
@@ -4082,7 +4083,7 @@
                         
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="2">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4130,9 +4131,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Pop Âu Mỹ Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Pop Âu Mỹ Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Adele</a>,
                               <a href="#">The Kid LAROI</a>,
                               <a href="#">Justin Bieber</a>...
@@ -4142,7 +4144,7 @@
                         
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="3">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4190,9 +4192,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hàn Quốc Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hàn Quốc Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">BLACKPINK</a>,
                               <a href="#">IVE</a>,
                               <a href="#">(G)I-DLE</a>...
@@ -4201,7 +4204,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="4">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4249,18 +4252,17 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc EDM...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc EDM...</a>
                            </div>
-                           <div class="card-artists">
-                              <a href="#">Alan Walker</a>,
-                              <a href="#">K-391</a>,
-                              <a href="#">Emelie Hollow</a>...
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
+
                            </div>
 
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="5">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4308,9 +4310,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Rap Việt Nam...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Rap Việt Nam...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">HIEUTHUHAI</a>,
                               <a href="#">G5R Squad</a>,
                               <a href="#">Phúc Du</a>...
@@ -4332,7 +4335,7 @@
 
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="6">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4379,9 +4382,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc EDM Việt Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc EDM Việt Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Masawe</a>,
                               <a href="#">Pháo</a>,
                               <a href="#">CM1X</a>...
@@ -4389,7 +4393,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="7">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4437,9 +4441,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc V-Pop Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc V-Pop Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">MONO</a>,
                               <a href="#">Vương Anh Tú</a>,
                               <a href="#">Keyo</a>...
@@ -4448,7 +4453,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="8">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4496,9 +4501,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Phim Việt Nam...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Phim Việt Nam...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Hùng Cường</a>,
                               <a href="#">Lưu Ánh Loan</a>,
                               <a href="#">Việt Hòa</a>...
@@ -4507,7 +4513,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="9">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4555,9 +4561,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Trịnh Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Trịnh Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Hùng Cường</a>,
                               <a href="#">Lưu Ánh Loan</a>,
                               <a href="#">Việt Hòa</a>...
@@ -4566,7 +4573,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="10">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4614,9 +4621,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Cải Lương Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Cải Lương Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Cẩm Loan</a>,
                               <a href="#">Hoàn Lâm</a>,
                               <a href="#">Vy Thúy Hằng</a>...
@@ -4626,7 +4634,7 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="11">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4673,9 +4681,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Không Lời Việt...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Không Lời Việt...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Vũ Đặng Quốc Việt</a>,
                               <a href="#">Peto</a>,
                               <a href="#">Phương Thùy</a>...
@@ -4683,7 +4692,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="12">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4731,9 +4740,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Thiếu Nhi Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Thiếu Nhi Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Ngọc Khánh Chi</a>,
                               <a href="#">Bé Thanh Ngân</a>,
                               <a href="#">Chân</a>...
@@ -4742,7 +4752,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="13">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4790,9 +4800,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Quê Hương...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Quê Hương...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Phi Nhung</a>,
                               <a href="#">Tố My</a>,
                               <a href="#">Dương Hồng Loan</a>...
@@ -4801,7 +4812,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="14">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4849,9 +4860,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Cách Mạng...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Cách Mạng...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Trường Kha</a>,
                               <a href="#">Quang Hà</a>,
                               <a href="#">Tình Ca Việt</a>...
@@ -4860,7 +4872,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="15">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4908,9 +4920,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Dance Việt...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Dance Việt...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">CUKAK</a>,
                               <a href="#">Phát Hồ</a>,
                               <a href="#">DinhLong</a>...
@@ -4920,7 +4933,7 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="16">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -4967,9 +4980,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Rap Việt Nam...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Rap Việt Nam...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">HIEUTHUHAI</a>,
                               <a href="#">G5R Squad</a>,
                               <a href="#">Phúc Du</a>...
@@ -4977,7 +4991,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="17">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5025,9 +5039,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Rock Việt Nam...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Rock Việt Nam...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">7UPPERCUTS</a>,
                               <a href="#">The Cassette</a>,
                               <a href="#">ĐÁ SỐ TỚI</a>...
@@ -5036,7 +5051,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="18">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5084,9 +5099,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Trữ Tình Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Trữ Tình Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Như Quỳnh</a>,
                               <a href="#">Mạnh Quỳnh</a>,
                               <a href="#">Đan Trường</a>...
@@ -5095,7 +5111,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="19">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5143,9 +5159,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Bài Hát Nhạc Trẻ Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Bài Hát Nhạc Trẻ Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">MONO</a>,
                               <a href="#">Vương Anh Tú</a>,
                               <a href="#">Keyo</a>...
@@ -5164,7 +5181,7 @@
                   <div class="card-wrapper">
 
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="20">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5211,9 +5228,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Phim Hoa Ngữ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Phim Hoa Ngữ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Cheng Xiao</a>,
                               <a href="#">Xu Kai</a>,
                               <a href="#">Angela Zhang</a>...
@@ -5221,7 +5239,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="21">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5269,9 +5287,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Phim Hàn Quốc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Phim Hàn Quốc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Jo Jung Suk</a>,
                               <a href="#">Gaho</a>,
                               <a href="#">DAVICHI</a>...
@@ -5280,7 +5299,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="22">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5328,9 +5347,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hoa Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hoa Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">A Nhũng</a>,
                               <a href="#">Mộng Nhiên</a>,
                               <a href="#">Danh Quyết</a>...
@@ -5339,7 +5359,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="23">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5387,9 +5407,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Nhật Bản Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Nhật Bản Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Kenshi Yonezu</a>,
                               <a href="#">YOASOBI</a>,
                               <a href="#">FLOW</a>...
@@ -5398,7 +5419,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="24">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5446,9 +5467,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hàn Quốc Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hàn Quốc Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">BLACKPINK</a>,
                               <a href="#">IVE</a>,
                               <a href="#">(G)I-DLE</a>...
@@ -5466,7 +5488,7 @@
 
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="25">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5513,9 +5535,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Audiophile Âu...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Audiophile Âu...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Bobby Vinton</a>,
                               <a href="#">Herman's Hermits</a>,
                               <a href="#">Matt Monro</a>...
@@ -5523,7 +5546,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="26">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5571,9 +5594,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Folk Âu Mỹ Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Folk Âu Mỹ Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Lydia Cole</a>,
                               <a href="#">The Paper Kites</a>,
                               <a href="#">Aoife O'Donovan</a>...
@@ -5582,7 +5606,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="27">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5630,9 +5654,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Blue/Jazz Âu...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Blue/Jazz Âu...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Eartha Kitt</a>,
                               <a href="#">Pablo Cepeda</a>,
                               <a href="#">Lynn Blessing</a>...
@@ -5641,7 +5666,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="28">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5689,9 +5714,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Alan Walker</a>,
                               <a href="#">K-391</a>,
                               <a href="#">Emelie Hollow</a>...
@@ -5700,7 +5726,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="29">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5748,9 +5774,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Indie Âu Mỹ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Indie Âu Mỹ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Au/Ra</a>,
                               <a href="#">Luke Hemmings</a>,
                               <a href="#">Declan McKenna</a>...
@@ -5760,7 +5787,7 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="30">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5807,9 +5834,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Christian &...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Christian &...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Rhett Walker</a>,
                               <a href="#">Pentatonix</a>,
                               <a href="#">Justin Bieber</a>...
@@ -5817,7 +5845,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="31">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5865,9 +5893,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Phim Âu Mỹ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Phim Âu Mỹ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Lionel Richie</a>,
                               <a href="#">Ariana Grande</a>,
                               <a href="#">Low Roar</a>...
@@ -5876,7 +5905,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="32">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5924,9 +5953,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc R&B Âu Mỹ Hay...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc R&B Âu Mỹ Hay...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Giveon</a>,
                               <a href="#">Khalid</a>,
                               <a href="#">Nicki Minaj</a>...
@@ -5935,7 +5965,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="33">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -5983,9 +6013,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc EDM...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc EDM...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Alan Walker</a>,
                               <a href="#">K-391</a>,
                               <a href="#">Emelie Hollow</a>...
@@ -5994,7 +6025,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="34">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6042,9 +6073,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Country Âu Mỹ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Country Âu Mỹ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Taylor Swift</a>,
                               <a href="#">Mitchell Tenpenny</a>,
                               <a href="#">Walker Hayes</a>...
@@ -6054,7 +6086,7 @@
                      </div>
                      <!-- 5 card item -->
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="35">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6101,9 +6133,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Rap/Hip Hop...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Rap/Hip Hop...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Post Malone</a>,
                               <a href="#">24KGoldn</a>,
                               <a href="#">Lil Nas X</a>...
@@ -6111,7 +6144,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="36">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6159,9 +6192,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Rock Âu Mỹ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Rock Âu Mỹ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Simple Plan</a>,
                               <a href="#">Foo Fighters</a>,
                               <a href="#">The Script</a>...
@@ -6170,7 +6204,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="37">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6218,9 +6252,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Pop Âu Mỹ Hay Nhất...</a>
+                              <a href="#" class="top100__title-text">Top 100 Pop Âu Mỹ Hay Nhất...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Adele</a>,
                               <a href="#">The Kid LAROI</a>,
                               <a href="#">Justin Bieber</a>...
@@ -6237,7 +6272,7 @@
                   <div class="card-wrapper">
 
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="38">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6284,9 +6319,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Relax Lab</a>,
                               <a href="#">Igor Krutoy</a>,
                               <a href="#">Toshiro Masuda</a>...
@@ -6294,7 +6330,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="39">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6342,9 +6378,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Hòa Tấu New Age /...</a>
+                              <a href="#" class="top100__title-text">Top 100 Hòa Tấu New Age /...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Louie Ocampo</a>,
                               <a href="#">Bandari</a>,
                               <a href="#">Richard Clayderman</a>...
@@ -6353,7 +6390,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="40">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6401,9 +6438,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Đinh Quang Minh</a>,
                               <a href="#">Đông Hòa</a>,
                               <a href="#">Kenny G</a>...
@@ -6412,7 +6450,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="41">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6460,9 +6498,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">David Darling</a>,
                               <a href="#">The Piano Guys</a>,
                               <a href="#">Yo-Yo Ma</a>...
@@ -6471,7 +6510,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="42">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6519,9 +6558,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Hiền Lê</a>,
                               <a href="#">Yanni</a>,
                               <a href="#">Jmi</a>...
@@ -6530,7 +6570,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="43">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6578,9 +6618,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Đinh Quang Minh</a>,
                               <a href="#">Đông Hòa</a>,
                               <a href="#">Francis Goya</a>...
@@ -6589,7 +6630,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="44 ">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6637,9 +6678,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Nhạc...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Nhạc...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Vũ Đặng Quốc Việt</a>,
                               <a href="#">Relax Lab</a>,
                               <a href="#">Yiruma</a>...
@@ -6648,7 +6690,7 @@
                         </div>
                      </div>
                      <div class="card-item">
-                        <div class="container-btn-top100-edit-Form">
+                        <div class="container-btn-top100-edit-Form" value="45">
                            <button class="btn-top100-edit-Form js-action-top100-edit">Edit</button>                         
                         </div>
                         <!-- Begin: Open login edit -->
@@ -6696,9 +6738,10 @@
                         </a>
                         <div class="card-info">
                            <div class="card-name">
-                              <a href="#">Top 100 Nhạc Hòa Tấu Cổ...</a>
+                              <a href="#" class="top100__title-text">Top 100 Nhạc Hòa Tấu Cổ...</a>
                            </div>
-                           <div class="card-artists">
+                                                      <div class="card-artists">
+                              <span class="top100__singers-text"></span>
                               <a href="#">Contempo-Divo</a>,
                               <a href="#">한규원</a>,
                               <a href="#">Hawa</a>...
