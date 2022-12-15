@@ -244,7 +244,7 @@
 
       <!-- Start trang cá nhân -->
       <div id="tabCaNhan">
-         <table class="table table_admin table-bordered">
+         <table class="table table_admin table-bordered" style="width:98%;">
             <thead>
                <tr>
                   <th>id</th>
